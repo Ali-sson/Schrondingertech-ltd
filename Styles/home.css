@@ -36,6 +36,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
   font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
@@ -48,15 +49,22 @@ body {
 
 }
 
+.main-wrapper {
+  max-width: 1400px;   /* Keeps content readable */
+  margin: 0 auto;      /* Centers it */
+  padding: 0 1.5rem;   /* Small padding for mobile screens */
+}
+
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-font-family: "Oswald", sans-serif;
+font-family: "Poppins", sans-serif;
 font-weight: 700;
 line-height: 1.2;
 color: var(--text-dark);
 }
 
-h1 { font-size: 4rem; }
+h1 { font-size: 3.8rem; }
 h2 { font-size: 3rem; }
 h3 { font-size: 2.4rem; }
 h4 { font-size: 2rem; }
@@ -64,9 +72,10 @@ h5 { font-size: 1.6rem; }
 h6 { font-size: 1.4rem; }
 
 p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  color: var(--color-black);
 }
 
 /* Links */
@@ -74,7 +83,7 @@ a.button {
   display: inline-flex;            /* lets us center text */
   justify-content: center;         /* center horizontally */
   align-items: center;             /* center vertically */
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   border-radius: 5px;
   background: var(--color-primary);
@@ -85,6 +94,7 @@ a.button {
 
 a.button:hover {
   background: var(--color-dark);   /* hover effect */
+  text-decoration: underline;
 }
 
 
@@ -116,7 +126,7 @@ a.button:hover {
   gap: 2rem;
 }
 .nav-links a {
-    font-size: 2rem;
+    font-size: 1.6rem;
   color: var(--text-dark);
   font-weight: 600;
   text-decoration: none;
@@ -129,7 +139,7 @@ a.button:hover {
 .social-icons a {
   color: var(--text-dark);
   margin-left: 1.2rem;
-    font-size: 2rem;
+  font-size: 1.6rem;
   transition: color 0.3s ease;
 }
 .social-icons a:hover {
@@ -164,16 +174,17 @@ footer {
 
 .footer-col p {
   margin: 0.5rem 0;
-  line-height: 1.6;
-  font-size: 1.6rem;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  color: var(--color-light);
 }
 
 .footer-col a {
   display: block;
   color: var(--text-light);
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
   transition: 0.3s;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
@@ -190,13 +201,15 @@ footer {
 .footer-bottom p {
   margin-top: 2rem;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: italic;
+  color: var(--color-light);
 }
 
 .footer-note {
   text-align: center;
   font-size: 1.4rem;
+  color: var(--color-light);
 }
 
 /* Make first column wider on desktop */
@@ -238,6 +251,7 @@ footer {
   }
 }
 @media (max-width: 768px) {
+
   footer {
     padding: 3rem 2rem;
   }

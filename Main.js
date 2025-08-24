@@ -139,3 +139,43 @@ const observer = new IntersectionObserver((entries, observer) => {
 faders.forEach(fader => {
   observer.observe(fader);
 });
+
+
+// Counter animation for impact numbers
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".impact-number");
+  const speed = 200; // lower = faster
+
+  const animateCounter = (counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText.replace(/,/g, "");
+
+      // Increment step
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment).toLocaleString();
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target.toLocaleString(); // final number
+      }
+    };
+    updateCount();
+  };
+
+  // Trigger animation only when section is visible
+  const section = document.querySelector(".impact-section");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        counters.forEach((counter) => animateCounter(counter));
+        observer.unobserve(section); // Run only once
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(section);
+});
