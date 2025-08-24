@@ -331,8 +331,8 @@ background-image: url('../images/hero1.jpeg');
     }
 
     .image-slide1 img {
-      width:50%;
-      max-width: 200px;
+      width:70%;
+      max-width: 400px;
       /* height: auto; fixed height */
     }
 
@@ -618,6 +618,10 @@ background-image: url('../images/hero1.jpeg');
 html {
   font-size: 40%;
 } 
+
+.hero-carousel {
+  height: 70vh;
+}
 .hero-content h1 {
   letter-spacing: -1.5px;
 } 
@@ -640,5 +644,17 @@ html {
       object-fit: cover;
       border-radius: 12px;
     }
+
+    .image-slide1 img {
+     width: 100%;
+      max-width: 300px;
+      /* height: auto; fixed height */
+      /* height: 200px; */
+    
+
+} 
+.card img {
+  height: 300px;
+}
 
 }
