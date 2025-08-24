@@ -561,7 +561,7 @@ background-image: url('../images/hero1.jpeg');
 
 @media (max-width: 68.8rem) {
   html {
-    font-size: 50%;
+    font-size: 60%;
   }
 }
 
@@ -616,7 +616,7 @@ background-image: url('../images/hero1.jpeg');
 @media (max-width: 40rem) {
 
 html {
-  font-size: 50%;
+  font-size: 60%;
 } 
 
 .hero-carousel {
@@ -656,5 +656,7 @@ html {
 .card img {
   height: 300px;
 }
-
+.map-container {
+  padding-bottom: 30%;
+}
 }
