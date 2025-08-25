@@ -191,7 +191,9 @@ background-image: url('../images/hero1.jpeg');
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  width:100%;
+  height: auto;
+  /* max-width: 1000px; */
   margin: 0 auto;
 }
 
@@ -208,7 +210,7 @@ background-image: url('../images/hero1.jpeg');
 }
 
 .impact-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   display: block;
 }
@@ -220,15 +222,15 @@ background-image: url('../images/hero1.jpeg');
 }
 
 .impact-label {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-top: 0.5rem;
   color: #222E50;
 }
 
-[data-target="3600000"]::after {
+/* [data-target="3600000"]::after {
   content: " M+";
   font-size: 0.9rem;
-}
+} */
 
 
 /* Solution */
@@ -560,9 +562,9 @@ background-image: url('../images/hero1.jpeg');
 /* Mobile */
 
 @media (max-width: 68.8rem) {
-  html {
+  /* html {
     font-size: 60%;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
@@ -659,4 +661,8 @@ background-image: url('../images/hero1.jpeg');
 .map-container {
   padding-bottom: 30%;
 }
+
+.about-section {
+  padding: 2rem 0;
+} 
 }
