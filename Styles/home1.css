@@ -227,10 +227,7 @@ background-image: url('../images/hero1.jpeg');
   color: #222E50;
 }
 
-/* [data-target="3600000"]::after {
-  content: " M+";
-  font-size: 0.9rem;
-} */
+/* 
 
 
 /* Solution */
@@ -662,7 +659,7 @@ background-image: url('../images/hero1.jpeg');
   padding-bottom: 30%;
 }
 
-.about-section {
+.about-section, .blog-wrapper {
   padding: 2rem 0;
 } 
 }
