@@ -615,9 +615,9 @@ background-image: url('../images/hero1.jpeg');
 
 @media (max-width: 40rem) {
 
-html {
+/* html {
   font-size: 40%;
-} 
+}  */
 
 .hero-carousel {
   height: 70vh;
