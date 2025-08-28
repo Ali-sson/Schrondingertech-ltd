@@ -610,11 +610,11 @@ background-image: url('../images/hero1.jpeg');
 
     /* Background images */
     .interest1 {
-      background: url("/images/career1.jpeg") center/cover no-repeat;
+      background: url("../images/career1.jpeg") center/cover no-repeat;
     }
 
     .interest2 {
-      background: url("/images/product3.jpg") center/cover no-repeat;
+      background: url("../images/product3.jpg") center/cover no-repeat;
     }
 
 
