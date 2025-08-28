@@ -16,6 +16,21 @@
     }
   });
 
+
+
+
+  // Mobile dropdown toggle
+document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    // prevent following link on mobile
+    e.preventDefault();
+
+    const parent = this.parentElement;
+    parent.classList.toggle("active");
+  });
+});
+
+
   
 // Image slider functionality
 
@@ -124,25 +139,27 @@ document.querySelectorAll('.stat').forEach((el, index) => {
 
 
 
-    // // Fade-in animation on scroll
-const faders = document.querySelectorAll('.fade-in');
+// Fade-in animation on scroll with stagger effect
+const faders = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
 
 const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');   // Add the show class
-      observer.unobserve(entry.target);     // Animate only once
+      // Apply staggered delay based on index
+      entry.target.style.transitionDelay = `${index * 0.2}s`;
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target); // Animate only once
     }
   });
-}, { threshold: 0.2 }); // 20% of element visible
+}, { threshold: 0.2 }); // Trigger when 20% visible
 
 faders.forEach(fader => {
   observer.observe(fader);
 });
 
 
-// Counter animation for impact numbers
 
+// Counter animation for impact numbers
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".impact-number");
   const speed = 200; // lower = faster

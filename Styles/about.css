@@ -1,0 +1,423 @@
+
+/* Base fade-in (bottom) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Apply same style to both links and dropdown toggle */
+.nav-links a,
+.dropdown-toggle {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  color: var(--color-primary);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Flex for arrow */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Arrow animation */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Submenu hidden */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/*  */
+
+/* Hero section */
+/* Hero section background */
+.hero-carousel {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  color: white;
+background-image: url('../images/career2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark overlay */
+.hero-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darkness */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  /* font-size: 5rem; */
+  margin: 0 auto;
+  letter-spacing: -2px;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-content a {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-content a:hover {
+  background: var(--color-primary-dark);
+}
+
+/*  */
+
+.our-story {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.our-story h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: #222;
+}
+
+/* Each block */
+.story-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.story-block.reverse {
+  flex-direction: row-reverse; /* alternate layout */
+}
+
+/* Image styling */
+.story-image {
+  flex: 1; /* let image take equal space */
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 600px;   /* increase size */
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Text styling */
+.story-text {
+  flex: 2; /* give text more room than image */
+}
+
+
+.story-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/*  */
+
+/* Mission & Vision Section */
+.mission-vision {
+  background: #f9fcff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.mission-vision .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Each Card */
+.mission-vision .card {
+  background: white;
+  flex: 1 1 400px;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Icons */
+.mission-vision .icon {
+  font-size: 3rem;
+  color: #0073C7; /* Primary Blue */
+  margin-bottom: 1.2rem;
+}
+
+/* Headings */
+.mission-vision h2 {
+  font-size: 2rem;
+  color: #222E50; /* Dark Blue */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+.mission-vision p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/*  */
+
+.core-values {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: var(); /* soft brand secondary */
+}
+
+.core-values h2 {
+  /* font-size: 2.8rem; */
+  margin-bottom: 3rem;
+  color: #222E50;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #1565c0; /* default (will be overridden by nth-child) */
+  color: #fff; /* Make all text white by default */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.value-card .icon {
+  font-size: 3rem;
+  color: #0073C7;
+  margin-bottom: 1rem;
+}
+.value-card h3 {
+  margin-bottom: 1rem;
+  /* font-size: 1.3rem; */
+  font-weight: 600;
+  color: #fff; /* strong white for titles */
+}
+
+.value-card ul {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #333;
+  padding-left: 1.2rem;
+}
+
+.value-card ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.value-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff; /* default text white */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85); /* softer white for paragraphs */
+  text-align: left;
+}
+
+.value-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* icons adapt (stay white) */
+}
+
+/* Different backgrounds */
+.value-card:nth-child(1) { background: #00796b; }   /* Teal */
+.value-card:nth-child(2) { background: #1565c0; }   /* Blue */
+.value-card:nth-child(3) { background: #f57c00; }   /* Orange */
+.value-card:nth-child(4) { background: #6a1b9a; }   /* Purple */
+.value-card:nth-child(5) { background: #2e7d32; }   /* Green */
+
+/* Hover effect */
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-block,
+  .story-block.reverse {
+    flex-direction: column; /* stack on mobile */
+    text-align: center;
+  }
+
+  .story-image img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+/* Responsiveness */
+
+/* Desktop: show on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile: show on click */
+@media (max-width: 900px) {
+  .dropdown.active .dropdown-menu {
+    display: block;
+    position: static; /* makes it stack nicely */
+    box-shadow: none;
+    background: #f9f9f9;
+    /* margin-top: 5px; */
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    position: absolute;
+    top: 60px; /* adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+}
