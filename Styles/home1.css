@@ -289,7 +289,7 @@ background-image: url('../images/hero1.jpeg');
   text-align: center;     /* center text */
   margin: 0 auto;    /* add bottom spacing */
   color: #0073C7;         /* primary color */
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   font-weight: bold;
     max-width: 1000px;
   margin-bottom: 4rem auto 0.5rem;
@@ -307,13 +307,13 @@ background-image: url('../images/hero1.jpeg');
   margin: 0 auto;
 }
 
-/* .impact-card {
+.impact-card {
   background: #fff;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
-} */
+}
 
 .impact-card:hover {
   transform: translateY(-8px);
@@ -326,7 +326,7 @@ background-image: url('../images/hero1.jpeg');
 }
 
 .impact-number {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   font-weight: bold;
   color: #009BD5; /* secondary color */
 }
