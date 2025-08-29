@@ -1,6 +1,15 @@
 .underline {
   display: block;
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
+}
+
+.underline-text {
+  display: inline-block; /* keeps underline same width as text */
+  position: relative;
+}
+
+.underline1 {
+  display: block;
 }
 
 
@@ -186,11 +195,6 @@ background-image: url('../images/hero1.jpeg');
   margin-bottom: 0.5rem;
 }
 
-.underline1 {
-  display: block;
-  margin: 0 auto;
-}
-
 .about-section {
   padding: 5rem 2rem;
   background: var(--bg-body);
@@ -229,11 +233,7 @@ background-image: url('../images/hero1.jpeg');
   display: block;
 }
 
-/* .about-content h1 {
-  /* max-width: 800px; */
-  /* margin-left: 2rem; 
-  margin-top:  -2rem;
-} */
+
 
 .about-content h2 {
   font-size: 2rem;
@@ -248,7 +248,7 @@ background-image: url('../images/hero1.jpeg');
 }
 
 .about-content .title1 {
-    margin-top: -10px;
+    margin-top: -10px 0 2rem;
     /* border-bottom: 5px solid var(--color-primary-dark); */
     display: inline-block;
     font-size: 3rem;
@@ -261,7 +261,7 @@ background-image: url('../images/hero1.jpeg');
   /* font-size: 1.6rem; */
   line-height: 1.5;
   margin: 1rem 0;
-  text-align: justify;
+  /* text-align: justify; */
   color: var(--text-black);
 }
 
@@ -292,12 +292,12 @@ background-image: url('../images/hero1.jpeg');
   /* font-size: 3.5rem; */
   font-weight: bold;
     max-width: 1000px;
-  margin-bottom: 4rem auto 0.5rem;
+  margin-bottom: 4rem auto 2rem;
 }
 
 .impact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
@@ -363,7 +363,7 @@ background-image: url('../images/hero1.jpeg');
             
         }
         h2 {
-         margin: 3rem auto 0.5rem;
+         margin: 3rem auto 1.5rem;
          color: var(--color-primary);
         }
         .card-container {
@@ -431,7 +431,7 @@ background-image: url('../images/hero1.jpeg');
 
     .image-slider h2{
       text-align: center;
-      margin: 0 3rem;
+      margin: 10rem auto 1rem;
       /* font-weight: 200; */
     }
 
@@ -553,9 +553,9 @@ background-image: url('../images/hero1.jpeg');
 
     .interest h2 {
       text-align: center;
-      margin-bottom: 1rem;
+      margin: 10rem 0 1rem;
       color: #0073C7;
-      font-size: 2.5rem;
+      /* font-size: 2.5rem; */
     }
 
     .interest-card {
@@ -626,16 +626,16 @@ background-image: url('../images/hero1.jpeg');
 .map-section h2 {
   font-size: 2rem;
   color: #0073C7;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .map-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* prevents map from being too wide on large screens */
+  max-width: 1200px; /* prevents map from being too wide on large screens */
   margin: 0 auto;
-  padding-bottom: 20%; /* 16:9 aspect ratio */
-  height: 30px;
+  padding-bottom: 35%; /* 16:9 aspect ratio */
+  height: 50px;
   overflow: hidden;
   border-radius: 12px; /* smooth rounded corners */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* subtle shadow */
@@ -682,7 +682,7 @@ background-image: url('../images/hero1.jpeg');
 }
 
 /* Responsive design */
-        @media (max-width: 900px) {
+        @media (max-width: 1180px) {
           .dropdown.active .dropdown-menu {
     display: block;
     position: static; /* makes it stack nicely */

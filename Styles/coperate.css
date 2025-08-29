@@ -244,7 +244,7 @@
 }
 
 /* Mobile: show on click */
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .dropdown.active .dropdown-menu {
     display: block;
     position: static; /* makes it stack nicely */

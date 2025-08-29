@@ -97,7 +97,7 @@
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
-  color: #333;
+  /* color: #333; */
   text-decoration: none;
 }
 .dropdown-menu a:hover {
@@ -170,9 +170,9 @@ background-image: url('../images/career2.jpeg');
 
 .our-story h2 {
   text-align: center;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   margin-bottom: 4rem;
-  color: #222;
+  color: var(--color-primary);
 }
 
 /* Each block */
@@ -197,7 +197,7 @@ background-image: url('../images/career2.jpeg');
   width: 100%;
   max-width: 600px;   /* increase size */
   height: auto;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
@@ -399,7 +399,7 @@ background-image: url('../images/career2.jpeg');
 }
 
 /* Mobile: show on click */
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .dropdown.active .dropdown-menu {
     display: block;
     position: static; /* makes it stack nicely */
