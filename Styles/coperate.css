@@ -188,13 +188,50 @@
 }
 
 .governance-card {
-  background: #fff;
+  /* background: lightblue; */
   padding: 1.5rem 2rem;
   margin: 1.5rem 0;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Target cards correctly inside their container */
+.governance-card:nth-of-type(1){
+  background: lightblue;
+}
+
+.governance-card:nth-of-type(5) {
+  background: #FFD700; /* gold */
+}
+
+.governance-card:nth-of-type(2) {
+  background: lightgreen;
+}
+
+.governance-card:nth-of-type(3) {
+  background: #FFDDC1; /* soft peach */
+}
+
+.governance-card:nth-of-type(4) {
+  background: lightpink;
+}
+
+.governance-card:nth-of-type(6) {
+  background: lightyellow;
+}
+
+.governance-card:nth-of-type(7) {
+  background: #FFFACD; /* light lemon yellow */
+}
+
+.governance-card:nth-of-type(8) {
+  background: #E0BBE4; /* soft lavender */
+}
+
+
+
+
 
 .governance-card:hover {
   transform: translateY(-5px);

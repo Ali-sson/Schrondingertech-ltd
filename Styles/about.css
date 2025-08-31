@@ -196,7 +196,7 @@ background-image: url('../images/career2.jpeg');
 .story-image img {
   width: 100%;
   max-width: 600px;   /* increase size */
-  height: auto;
+  height: 300px;
   /* border-radius: 20px; */
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -204,7 +204,7 @@ background-image: url('../images/career2.jpeg');
 
 /* Text styling */
 .story-text {
-  flex: 2; /* give text more room than image */
+  flex: 1; /* give text more room than image */
 }
 
 
