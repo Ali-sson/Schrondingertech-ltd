@@ -78,7 +78,7 @@
 /* Hero section background */
 .hero-carousel {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   color: white;
 background-image: url('../images/career2.jpeg');
@@ -93,7 +93,7 @@ background-image: url('../images/career2.jpeg');
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* darkness */
+  background: rgba(0, 0, 0, 0.3); /* darkness */
   z-index: 0;
 }
 
@@ -130,7 +130,7 @@ background-image: url('../images/career2.jpeg');
 
 /* Team Section */
     .team-section {
-      padding: 3rem 2rem;
+      padding: 6rem 2rem;
     }
 
     .team-section h2 {
@@ -141,16 +141,17 @@ background-image: url('../images/career2.jpeg');
     }
 
     .team-section p {
-      max-width: 900px;
-      margin: 0 auto 2rem auto;
+      max-width: 1400px;
+      margin: 3rem auto 5rem auto;
       /* font-size: 1rem; */
       /* color: #666; */
       text-align: center;
+      line-height: 2;
     }
 
     .founders-title {
       /* font-size: 1.5rem; */
-      margin: 2rem 0 1rem;
+      margin: 2rem 0 5rem;
       text-align: center ;
     }
 
@@ -175,7 +176,7 @@ background-image: url('../images/career2.jpeg');
       width: 300px;
       height: 300px;
       object-fit: cover;
-      border-radius: 50%;
+    border-radius: 12px;
       margin: 0 auto;
       padding: 5px;
       text-align: center;
@@ -197,12 +198,13 @@ background-image: url('../images/career2.jpeg');
       text-align: center;
     }
 
-    .team-member p, .team-member1 p {
+    .team-member p, .team-member1 p{
       font-size: 1.2rem;
       color: #444;
       font-style: italic;
       text-align: center;
     }
+
 
     .team-social-icons {
         display: flex;
@@ -293,12 +295,12 @@ background-image: url('../images/career2.jpeg');
     /* Non-Executive Director Section */
 .director-section {
   padding: 3rem 2rem;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
 }
-
+ 
 .director-title {
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 2rem;
   color: #333;
 }
@@ -307,7 +309,7 @@ background-image: url('../images/career2.jpeg');
 .director-container {
   display: flex;
   flex-direction: row;   /* image left, text right */
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
@@ -344,6 +346,7 @@ background-image: url('../images/career2.jpeg');
   line-height: 1.6;
   color: #444;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 
 /* Social icons */
@@ -360,10 +363,13 @@ background-image: url('../images/career2.jpeg');
 }
 
 
-/* interested  */
-
 
 /* Interested section  */
+
+.interest {
+    background: #f9f9f9;
+    padding: 0.5rem 0 2rem;
+}
 
     .interest-container {
       display: grid;
@@ -383,7 +389,7 @@ background-image: url('../images/career2.jpeg');
     .interest-card {
       position: relative;
       border-radius: 10px;
-      overflow: hidden;
+      overflow: hidden; 
       height: 400px;
       display: flex;
       align-items: flex-end;
@@ -438,6 +444,127 @@ background-image: url('../images/career2.jpeg');
     }
 
 
+    /* Management Team */
+
+
+    
+/* Image Slider */
+
+   .image-slider {
+      position: relative;
+      width: 90%;
+      max-width: 1400px;
+      margin: 4rem auto;
+      overflow: hidden;
+      border-radius: 12px;
+      /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+      /* background: #fff; */
+    }
+
+    .image-slider h2{
+      text-align: center;
+      margin: 4rem auto 1rem;
+      /* font-weight: 200; */
+    }
+
+    .image-slider p {
+        text-align: center;
+    }
+
+
+
+    .image-slider-track{
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+      margin-top: 4rem;
+    }
+
+    .image-slide {
+      flex: 0 0 33.33%; /* desktop */
+      text-align: center;
+       padding: 0 0.5rem;
+    }
+
+    .image-slide1 {
+      flex: 0 0 20%;
+      text-align: center;
+      padding: 0 0.5rem;
+    }
+
+    .image-slide1 img {
+      width:250px;
+      max-width: 300px;
+      /* height: auto; fixed height */
+    }
+
+    .image-slide img {
+      width:250px;
+      max-width: 300px;
+      /* height: auto; fixed height */
+      /* height: 300px; */
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Navigation Arrows */
+    .image-slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .image-slider-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .image-slider-btn.prev {
+      left: 15px;
+    }
+
+    .image-slider-btn.next {
+      right: 15px;
+    }
+
+    /* Dots */
+    .slider-dots {
+      text-align: center;
+      padding: 12px 0;
+      display: none;
+    }
+
+    .slider-dots button {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: none;
+      background: #bbb;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slider-dots button.active {
+      background: #333;
+    }
+
+
+    .slider-learn-more {
+      display: flex;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -478,7 +605,7 @@ background-image: url('../images/career2.jpeg');
 
   .interest-container {
     grid-template-columns: 1fr; /* single column on mobile */
-    padding: 4rem 2rem;
+    padding: 2rem;
   }
 }
 
@@ -493,6 +620,20 @@ background-image: url('../images/career2.jpeg');
         flex-direction: column;
         align-items: center;
       }
+
+        .image-slide {
+        /* min-width: 100%; */
+        flex: 0 0 100%;
+      }
+
+      .image-slide img {
+        height: 350px; /* smaller height for mobile */
+         padding: 0 0.5rem;
+      }
+      .about-image1 {
+      max-width: 600px;
+      width: 100%;
+}
     }
 
 

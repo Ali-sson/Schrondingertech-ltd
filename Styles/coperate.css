@@ -145,7 +145,7 @@
 
 
 /*  */
-
+/* 
 .governance-section {
   background: #f9f9f9;
   padding: 4rem 2rem;
@@ -182,13 +182,13 @@
 }
 
 .intro  {
-  /* font-size: 1.1rem; */
+  /* font-size: 1.1rem; 
   margin-bottom: 1.5rem;
   color: #444;
 }
 
 .governance-card {
-  /* background: lightblue; */
+  /* background: lightblue; 
   padding: 1.5rem 2rem;
   margin: 1.5rem 0;
   border-radius: 12px;
@@ -196,13 +196,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Target cards correctly inside their container */
+/* Target cards correctly inside their container 
 .governance-card:nth-of-type(1){
   background: lightblue;
 }
 
 .governance-card:nth-of-type(5) {
-  background: #FFD700; /* gold */
+  background: #FFD700; /* gold 
 }
 
 .governance-card:nth-of-type(2) {
@@ -210,7 +210,7 @@
 }
 
 .governance-card:nth-of-type(3) {
-  background: #FFDDC1; /* soft peach */
+  background: #FFDDC1; /* soft peach 
 }
 
 .governance-card:nth-of-type(4) {
@@ -222,11 +222,11 @@
 }
 
 .governance-card:nth-of-type(7) {
-  background: #FFFACD; /* light lemon yellow */
+  background: #FFFACD; /* light lemon yellow 
 }
 
 .governance-card:nth-of-type(8) {
-  background: #E0BBE4; /* soft lavender */
+  background: #E0BBE4; /* soft lavender 
 }
 
 
@@ -253,8 +253,134 @@
 .governance-card ul li {
     font-size: 1.4rem;
     margin-bottom: 0.4rem;
+} */
+
+
+
+
+.core-values {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: var(); /* soft brand secondary */
 }
 
+.core-values h2 {
+  /* font-size: 2.8rem; */
+  margin-bottom: 3rem;
+  color: #222E50;
+}
+
+.core-values p {
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: left;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #1565c0; /* default (will be overridden by nth-child) */
+  color: #fff; /* Make all text white by default */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.value-card .icon {
+  font-size: 3rem;
+  color: #0073C7;
+  margin-bottom: 1rem;
+}
+.value-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff; /* strong white for titles */
+}
+
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.value-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff; /* default text white */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85); /* softer white for paragraphs */
+  text-align: left;
+}
+
+.value-card i {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* icons adapt (stay white) */
+}
+
+/* Different backgrounds */
+.value-card:nth-child(1) { background: #00796b; }   /* Teal */
+.value-card:nth-child(2) { background: #1565c0; }   /* Blue */
+.value-card:nth-child(3) { background: #f57c00; }   /* Orange */
+.value-card:nth-child(4) { background: #6a1b9a; }   /* Purple */
+.value-card:nth-child(5) { background: #2e7d32; }   /* Green */
+.value-card:nth-child(6) { background: #c2185b; }   /* Pink */
+.value-card:nth-child(7) { background: #fbc02d; }   /* Yellow */
+.value-card:nth-child(8) { background: #8e24aa; }   /* Deep Purple */
+
+
+/* Hover effect */
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-button {
+  text-align: center;   /* centers inline elements like button */
+  margin-top: 1.5rem;   /* keep your spacing */
+}
+
+
+.value-button {
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn {
+  background: #0073C7;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
 
 .closing {
   text-align: left;
