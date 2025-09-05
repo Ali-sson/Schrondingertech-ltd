@@ -196,3 +196,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(section);
 });
+
+
+// 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const impact = document.querySelector('.impact-section');
+  if (!impact) return;
+
+  const bg = document.getElementById('impact-fixed-bg');
+  if (!bg) return;
+
+  // Optional: sync the image (if you want different images per section)
+  // bg.style.backgroundImage = "url('../images/hero1.jpeg')";
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) bg.classList.add('visible');
+      else bg.classList.remove('visible');
+    });
+  }, { threshold: 0.1 });
+
+  io.observe(impact);
+});
+

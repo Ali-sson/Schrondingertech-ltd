@@ -1,3 +1,41 @@
+body {
+  background-color: #fff;
+}
+
+/* Base fade-in (bottom) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 
 /* Navigation Links */
@@ -131,6 +169,7 @@ background-image: url('../images/career2.jpeg');
 /* Team Section */
     .team-section {
       padding: 6rem 2rem;
+      background-color: var(--color-light);
     }
 
     .team-section h2 {
@@ -165,7 +204,6 @@ background-image: url('../images/career2.jpeg');
     .team-member {
       flex: 1 1 250px;
       max-width: 300px;
-      /* background: #fff; */
       padding: 1rem;
       /* border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
@@ -210,6 +248,7 @@ background-image: url('../images/career2.jpeg');
         display: flex;
         justify-content: center;
     }
+
 
     /* Team Member 1 */
 
@@ -295,7 +334,8 @@ background-image: url('../images/career2.jpeg');
     /* Non-Executive Director Section */
 .director-section {
   padding: 3rem 2rem;
-  /* background: #f9f9f9; */
+  margin-top: 4rem;
+background: var(--color-light);
 }
  
 .director-title {
@@ -452,6 +492,9 @@ background-image: url('../images/career2.jpeg');
 
     
 /* Image Slider */
+.management {
+  background-color: #fff;
+}
 
    .image-slider {
       position: relative;
@@ -460,6 +503,8 @@ background-image: url('../images/career2.jpeg');
       margin: 4rem auto;
       overflow: hidden;
       border-radius: 12px;
+      padding-top: 3rem;
+      background-color: #fff;
       /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
       /* background: #fff; */
     }
@@ -502,8 +547,9 @@ background-image: url('../images/career2.jpeg');
     }
 
     .image-slide img {
-      width:250px;
+      width:300px;
       max-width: 300px;
+      height: 300px;
       /* height: auto; fixed height */
       /* height: 300px; */
       object-fit: cover;

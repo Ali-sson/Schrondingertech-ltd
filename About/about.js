@@ -153,3 +153,26 @@ document.querySelectorAll('.stat').forEach((el, index) => {
     // Initialize all sliders on page
     document.querySelectorAll(".image-slider,.image-slider1").forEach(initSlider);
 
+    // Mission background reveal
+  document.addEventListener('DOMContentLoaded', function() {
+  const mission = document.querySelector('.mission-vision');
+  if (!mission) return;
+
+  const bg = document.getElementById('mission-fixed-bg');
+  if (!bg) return;
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        bg.classList.add('visible');
+      } else {
+        bg.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  io.observe(mission);
+});
+
+
+
