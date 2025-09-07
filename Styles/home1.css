@@ -119,6 +119,8 @@
 background-image: url('../images/hero1.jpeg');
   background-size: cover;
   background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
 }
 
 /* Dark overlay */
@@ -202,7 +204,7 @@ background-image: url('../images/hero1.jpeg');
 }
 .about-image img {
   width: 100%;        /* take full container width */
-  height: auto;       /* keep natural height */
+  height: 300px;       /* keep natural height */
   object-fit: cover;
   border-radius: 12px;
   display: block;
@@ -278,6 +280,10 @@ background-image: url('../images/hero1.jpeg');
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+}
+
+.story-block.reverse {
+  flex-direction: row-reverse; /* alternate layout */
 }
 
 
@@ -794,7 +800,7 @@ background-image: url('../images/hero1.jpeg');
     gap: 1rem;
     background: white;
     position: absolute;
-    top: 60px; /* adjust based on your header height */
+    top: 70px; /* adjust based on your header height */
     left: 0;
     width: 100%;
     padding: 1rem;
@@ -810,6 +816,10 @@ background-image: url('../images/hero1.jpeg');
             .card-solution {
                 width: 90%;
             }
+
+              .dropdown-toggle i {
+  display: block;
+}
         }
 
         

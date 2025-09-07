@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 
 /* Base fade-in (bottom) */
 .fade-in {
@@ -110,12 +113,14 @@
 /* Hero section background */
 .hero-carousel {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   color: white;
 background-image: url('../images/career2.jpeg');
   background-size: cover;
   background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
 }
 
 /* Dark overlay */
@@ -166,13 +171,15 @@ background-image: url('../images/career2.jpeg');
   max-width: 1200px;
   margin: 5rem auto;
   padding: 0 2rem;
+  text-align: center;
 }
 
 .our-story h2 {
-  text-align: center;
+  display: inline-block;
   /* font-size: 2.5rem; */
   margin-bottom: 4rem;
   color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
 }
 
 /* Each block */
@@ -280,9 +287,11 @@ background-image: url('../images/career2.jpeg');
 }
 
 .core-values h2 {
+  display: inline-block;
   /* font-size: 2.8rem; */
   margin-bottom: 3rem;
-  color: #222E50;
+  color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
 }
 
 .values-grid {
@@ -414,11 +423,18 @@ background-image: url('../images/career2.jpeg');
     gap: 1rem;
     background: white;
     position: absolute;
-    top: 60px; /* adjust based on your header height */
+    top: 70px; /* adjust based on your header height */
     left: 0;
     width: 100%;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     z-index: 1000;
   }
+    .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+}
 }

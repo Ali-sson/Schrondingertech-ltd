@@ -1,5 +1,6 @@
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /* Base fade-in (bottom) */
@@ -116,12 +117,14 @@ body {
 /* Hero section background */
 .hero-carousel {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   color: white;
 background-image: url('../images/career2.jpeg');
   background-size: cover;
   background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
 }
 
 /* Dark overlay */
@@ -170,13 +173,21 @@ background-image: url('../images/career2.jpeg');
     .team-section {
       padding: 6rem 2rem;
       background-color: var(--color-light);
+      text-align: center;
+    }
+
+    .team-section1 {
+      padding: 4rem 2rem 0;
+      text-align: center;
     }
 
     .team-section h2 {
-      /* font-size: 2rem; */
+      display: inline-block;
       margin-bottom: 0.5rem;
       /* font-weight: bold; */
       text-align: center;
+      color: var(--color-primary);
+      border-bottom: 7px solid var(--color-accent);
     }
 
     .team-section p {
@@ -190,7 +201,7 @@ background-image: url('../images/career2.jpeg');
 
     .team-section1 p {
         max-width: 1400px;
-      margin: 3rem auto 5rem auto;
+      margin: 1rem auto 3rem auto;
       /* font-size: 1rem; */
       /* color: #666; */
       text-align: center;
@@ -198,9 +209,12 @@ background-image: url('../images/career2.jpeg');
     }
 
     .founders-title {
+      display: inline-block;
       /* font-size: 1.5rem; */
       margin: 2rem 0 5rem;
       text-align: center ;
+      color: var(--color-primary);
+      border-bottom: 7px solid var(--color-accent);
     }
 
     .team-container {
@@ -221,9 +235,7 @@ background-image: url('../images/career2.jpeg');
 
     .team-member img {
       width: 300px;
-      height: 300px;
       object-fit: cover;
-    border-radius: 12px;
       margin: 0 auto;
       padding: 5px;
       text-align: center;
@@ -272,7 +284,7 @@ background-image: url('../images/career2.jpeg');
     }
 
     .team-member1 img {
-      width: 250px;
+      width: 300px;
       height: auto;
       object-fit: cover;
       /* border-radius: 50%; */
@@ -280,7 +292,6 @@ background-image: url('../images/career2.jpeg');
       padding: 5px;
       text-align: center;
       display: block;
-       border-radius: 12px;
     }
 
     /* Management Group */
@@ -316,8 +327,7 @@ background-image: url('../images/career2.jpeg');
     }
 
     .advisor-card img {
-      width: 180px;
-      height: 180px;
+      width: 300px;
       object-fit: cover;
       border-radius: 50%; /* makes image circular */
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -338,20 +348,48 @@ background-image: url('../images/career2.jpeg');
     }
 
 
-    /*  */
+    /* team button  */
+.team-member1 {
+  text-align: center; /* center content by default */
+}
+
+.team-button-container {
+  display: flex;
+  justify-content: center; /* center the button */
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-button {
+  display: inline-block;   /* shrink to text size */
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 
     /* Non-Executive Director Section */
 .director-section {
-  padding: 3rem 2rem;
+  padding: 4rem 0 2rem;
   margin-top: 4rem;
 background: var(--color-light);
+text-align: center;
 }
  
 .director-title {
   text-align: center;
   /* font-size: 2rem; */
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
+  display: inline-block;
 }
 
 /* Flexbox container */
@@ -366,9 +404,8 @@ background: var(--color-light);
 
 /* Image */
 .director-image img {
-  width: 250px;
+  width: 300px;
   height: auto;
-  border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -382,6 +419,7 @@ background: var(--color-light);
   font-size: 1.6rem;
   margin-bottom: 0.3rem;
   color: #222;
+  text-align: left;
 }
 
 .director-bio h4 {
@@ -389,6 +427,7 @@ background: var(--color-light);
   color: #555;
   margin-bottom: 1rem;
   font-weight: normal;
+  text-align: left;
 }
 
 .director-bio p {
@@ -396,22 +435,44 @@ background: var(--color-light);
   color: #444;
   margin-bottom: 1rem;
   font-style: italic;
+  text-align: left;
 }
 
 /* Social icons */
+
+.director-socials {
+  margin-top: 1rem;
+  text-align: left;
+}
 .director-socials a {
   display: inline-block;
   margin-right: 10px;
   font-size: 1.6rem;
   transition: color 0.3s ease;
   color: black;
+  text-align: left;
 }
 
 .director-socials a:hover {
   color: #005582;
 }
 
+.team-button1 a {
+  color: white;
+  padding: -2rem;
+  background: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
 
+.team-button1 a:hover {
+  background: var(--color-primary-dark);
+  color: var(--color-light);
+}
 
 /* Interested section  */
 
@@ -514,14 +575,18 @@ background: var(--color-light);
       border-radius: 12px;
       padding-top: 3rem;
       background-color: #fff;
+      text-align: center;
       /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
       /* background: #fff; */
     }
 
     .image-slider h2{
+      display: inline-block;
       text-align: center;
-      margin: 4rem auto 1rem;
+      margin: 4rem auto 4rem;
       /* font-weight: 200; */
+      color: var(--color-primary);
+      border-bottom: 7px solid var(--color-accent);
     }
 
     .image-slider p {
@@ -619,6 +684,12 @@ background: var(--color-light);
       display: flex;
       justify-content: center;
       margin: 2rem;
+    }
+
+    .management-socials a {
+      font-size: 2rem;
+      color: black;
+      margin: 0 0.5rem;
     }
 
 
@@ -721,4 +792,11 @@ background: var(--color-light);
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     z-index: 1000;
   }
+  .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+}
 }

@@ -1,0 +1,414 @@
+body {
+    overflow-x: hidden;
+}
+/* Base fade-in (bottom) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Apply same style to both links and dropdown toggle */
+.nav-links a,
+.dropdown-toggle {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  color: var(--color-primary);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Flex for arrow */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Arrow animation */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Submenu hidden */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero section */
+/* Hero section background */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+background-image: url('../images/approach.jpeg');
+  background-size: cover;
+  background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
+}
+
+/* Dark overlay */
+.hero-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* darkness */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  /* font-size: 5rem; */
+  margin: 0 auto;
+  letter-spacing: -2px;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-top: -2rem;
+}
+
+.hero-content a {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-content a:hover {
+  background: var(--color-primary-dark);
+}
+
+
+/* Approach Section */
+
+.our-approach {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+}
+
+.approach-text {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 4rem 2rem;
+    padding: 3rem;
+    color: #f9f9f9;
+}
+
+/* Each block */
+.story-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  padding: 2rem 2rem;
+}
+
+.story-block.reverse {
+  flex-direction: row-reverse; /* alternate layout */
+  background: #f9f9f9;
+}
+
+/* Image styling */
+.story-image {
+  flex: 1; /* let image take equal space */
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 600px;   /* increase size */
+  height: 400px;
+  /* border-radius: 20px; */
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Text styling */
+.story-text {
+  flex: 1; /* give text more room than image */
+}
+
+.story-text h2 {
+  /* font-size: 2rem; */
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
+}
+
+.story-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+
+
+
+/* Interested section  */
+
+.interest {
+    background: #f9f9f9;
+    padding: 0.5rem 0 2rem;
+    text-align: center;
+}
+
+    .interest-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 4rem auto;
+    }
+
+    .interest h2 {
+      display: inline-block;
+      text-align: center;
+      margin: 10rem 0 1rem;
+      color: #0073C7;
+      /* font-size: 2.5rem; */
+      border-bottom: 5px solid var(--color-accent);
+    }
+
+    .interest-card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden; 
+      height: 400px;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      margin-top: 3rem;
+
+    }
+
+    .interest-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4); /* dark overlay */
+    }
+
+    .interest-content {
+      position: relative;
+      padding: 1.5rem;
+      z-index: 1;
+    }
+
+    .interest-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      background: var(--color-primary);
+    }
+
+    .btn:hover {
+      background: var(--color-primary-dark);
+      color: var(--color-light);
+    }
+
+    /* Background images */
+    .interest1 {
+      background: url("../images/interest-services.jpeg") center/cover no-repeat;
+    }
+
+    .interest2 {
+      background: url("../images/interest-approach.jpg") center/cover no-repeat;
+    }
+
+
+
+    /* Responsiveness */  
+
+    
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-block,
+  .story-block.reverse {
+    flex-direction: column; /* stack on mobile */
+    text-align: center;
+  }
+
+   .story-image {
+    width: 100%;
+   }
+
+  
+  .story-image img {
+    width: 100%;          /* take full width */
+    height: auto;         /* keep aspect ratio */
+    max-height: 300px;    /* optional: limit very tall images */
+    object-fit: cover;    /* crop nicely if aspect ratio differs */
+    border-radius: 10px;  /* optional for consistent look */
+  }
+
+  .interest-container {
+    grid-template-columns: 1fr; /* single column on mobile */
+    padding: 2rem;
+  }
+}
+
+
+
+
+
+/* Responsiveness */
+
+/* Desktop: show on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile: show on click */
+@media (max-width: 1180px) {
+  .dropdown.active .dropdown-menu {
+    display: block;
+    position: static; /* makes it stack nicely */
+    box-shadow: none;
+    background: #f9f9f9;
+    /* margin-top: 5px; */
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    position: absolute;
+    top: 70px; /* adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+    .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+}
+.hero-content {
+    padding-top: 9rem;
+}
+
+.hero-content p {
+    margin: 1rem auto 2rem;
+    font-size: 1.6rem;
+    margin-top: -2rem;
+} }

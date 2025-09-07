@@ -15,7 +15,11 @@
 <!--  -->
 </head>
 <body>
-  <div id="impact-fixed-bg" aria-hidden="true"></div>
+   <div id="impact-fixed-bg" aria-hidden="true"></div>
+
+  
+
+
 
   <!-- Header -->
   <header class="navbar">
@@ -42,7 +46,17 @@
       <a href="About/team.html">Our Team</a>
     </div>
   </div>
-      <a href="#">Solutions</a>
+         <!-- Dropdown for Solutions -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle">
+      Solutions <i class="fas fa-caret-down"></i>
+    </a>
+    <div class="dropdown-menu">
+      <a href="Solutions/approach.html">Our Approach</a>
+      <a href="Solutions/services.html">Our Services</a>
+      <a href="Solutions/products.html">Our Products</a>
+    </div>
+  </div> 
       <a href="#">Projects</a>
       <a href="#">WASH</a>
       <a href="#">R & D</a>
@@ -100,9 +114,15 @@
 
 <!-- Impact section -->
 <section class="impact-section fade-in">
-  
   <h2 class="impact-title">Our Impact</h2>
+   <!-- <svg class="underline1" viewBox="0 0 150 10" preserveAspectRatio="none" width="20%" height="10">
+    <path d="M 0 5 Q 25 0, 50 5 T 100 5 T 150 5" 
+          stroke="orange" 
+          stroke-width="6" 
+          fill="transparent" />
+  </svg> -->
   <div class="impact-container">
+
     <div class="impact-card">
       <span class="impact-icon">💧</span>
       <h3 class="impact-number" data-target="3600000">0</h3>
@@ -135,7 +155,7 @@
     <div class="about-image1">
       <img src="images/update1.jpg" alt="Company Building" />
     </div>
-    <div class="about-content">
+    <div class="about-content fade-in-right">
       <h2 class="title">Solar Energy and the Future of Water Treatment</h2>
       <h3 class="subtitle">Introduction</h3>
       <p class="description">
@@ -150,11 +170,11 @@
 <!-- Blog Section 2 -->
 
  <section class="about-section fade-in">
-  <div class="about-container">
+  <div class="about-container story-block reverse">
     <div class="about-image1">
       <img src="images/update2.jpg" alt="Company Building" />
     </div>
-    <div class="about-content">
+    <div class="about-content fade-in-left">
       <h2 class="title">Water and Public Health</h2>
       <h3 class="subtitle">What Does Water Have to do With Human Health?</h3>
       <p class="description">
@@ -177,7 +197,7 @@
     <div class="about-image1">
       <img src="images/update3.jpg" alt="Company Building" />
     </div>
-    <div class="about-content">
+    <div class="about-content fade-in-right">
       <h2 class="title">Solar Energy’s Role in Achieving the UN Sustainable Development Goals.</h2>
       <h3 class="subtitle">Introduction</h3>
 
@@ -269,6 +289,7 @@
 
   
 <!-- Update Section. this section has the same styles as the About Section -->
+
 <section class="blog-wrapper">
   <!-- Section Header -->
   <div class="section-header">

@@ -115,6 +115,10 @@ h6 {
   font-weight: 500;
 }
 
+.dropdown-toggle i {
+  display: none;
+}
+
 /* Footer */
 footer {
   font-size: clamp(0.8rem, 1.2vw, 0.9rem);

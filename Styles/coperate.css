@@ -106,7 +106,7 @@
 
 .hero-carousel {
   position: relative;
-  height: 80vh; /* Full screen */
+  height: 100vh; /* Full screen */
   background-image: url("../images/coperate.jpg");
   background-position: center;
   background-size: cover;
@@ -421,11 +421,21 @@
     gap: 1rem;
     background: white;
     position: absolute;
-    top: 60px; /* adjust based on your header height */
+    top: 70px; /* adjust based on your header height */
     left: 0;
     width: 100%;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     z-index: 1000;
   }
+
+    .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+}
+
+
 }
