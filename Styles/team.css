@@ -2,41 +2,6 @@ body {
   background-color: #fff;
 }
 
-/* Base fade-in (bottom) */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Left */
-.fade-in-left {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-in-left.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Right */
-.fade-in-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-in-right.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-
 
 /* Navigation Links */
 .nav-links {
