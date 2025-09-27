@@ -225,6 +225,10 @@ background-image: url('../images/hero1.jpeg');
     color: var(--color-primary);
 }
 
+/* .about-content .title {
+  font-size: 5rem;
+} */
+
 
 .about-content .description {
   /* font-size: 1.6rem; */
@@ -593,15 +597,12 @@ background-image: url('../images/hero1.jpeg');
     /*  */
 
 
-/* .title {
-  margin: 1rem 0;
-  font-size: 2.8rem;
-}
 
-.subtitle {
+
+/* .subtitle {
   margin: 1rem 0;
   color: var(--text-muted);
-} */
+}  */
 
 
 /* Interested section  */
