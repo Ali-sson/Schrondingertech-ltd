@@ -284,18 +284,10 @@ background-image: url('../images/hero1.jpeg');
 .impact-section {
   position: relative;
   z-index: 1;
+  padding: 6rem 2rem;
 }
 
 
-/* .impact-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* darkness 
-  z-index: 0;
-} */
 
 .impact-title {
   position: relative;
@@ -376,35 +368,6 @@ background-image: url('../images/hero1.jpeg');
 .no-plus::after {
   content: "";
 }
-
-/* 
-
-
-/* .impact-section {
-  position: relative;
-  text-align: center;
-  padding: 4rem 2rem;
-  background: url('../images/hero1.jpeg') center/cover no-repeat fixed, #EDF7F6; /* fixed makes image stay in place 
-  color: #222E50;
-   background-attachment: fixed;
-} */
-
-/* 
-.impact-section {
-  position: relative;
-  text-align: center;
-  padding: 4rem 2rem;
-  color: #222E50;
-
-  /* explicit background properties 
-  background-image: url('../images/hero1.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;   /* should work on desktop 
-  overflow: visible;
-} */
-
 
 
 /* Solution */
