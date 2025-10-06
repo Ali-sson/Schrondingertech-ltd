@@ -1,0 +1,512 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Apply same style to both links and dropdown toggle */
+.nav-links a,
+.dropdown-toggle {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  color: var(--color-primary);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Flex for arrow */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Arrow animation */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Submenu hidden */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero section */
+/* Hero section background */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+background-image: url('../images/career2.jpeg');
+  background-size: cover;
+  background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
+}
+
+/* Dark overlay */
+.hero-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darkness */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  /* font-size: 5rem; */
+  margin: 0 auto;
+  letter-spacing: -2px;
+  color: var(--bg-light);
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-top: -2rem;
+}
+
+.hero-content a {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-content a:hover {
+  background: var(--color-primary-dark);
+}
+
+
+.research-intro {
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
+/* Focus Section */
+
+
+    .focus-section {
+      text-align: center;
+      padding: 50px 20px;
+      background: #f9f9f9;
+    }
+
+    .focus-section h2 {
+      /* font-size: 28px; */
+      font-weight: bold;
+      margin-bottom: 3rem;
+      color: var(--color-primary);
+    }
+
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .focus-card {
+      /* background: #fff; */
+      border-radius: 10px;
+      /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .focus-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .focus-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .focus-card h4 {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+      color: #111;
+    }
+
+    .focus-card p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Upcoming Technologies Section */
+
+  .upcoming-technologies {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 20px;
+}
+
+h2 {
+  /* font-size: 26px; */
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: #f5c518; /* yellow underline */
+  border-radius: 2px;
+}
+
+.intro {
+  margin-top: 1.5rem;
+  /* font-size: 1rem; */
+  color: #333;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 3rem;
+}
+
+.image img {
+  width: 450px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.text ul {
+  list-style: none;
+  padding: 2rem;
+  font-size: 16px;
+}
+
+.text li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.text strong {
+  color: #000;
+}
+
+.footer-update {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.footer-update span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .intro, .footer {
+    font-size: 15px;
+  }
+}
+
+
+/*  */
+
+.article-section {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 20px;
+}
+
+h2 {
+  /* font-size: 26px; */
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: #f5c518; /* Yellow underline */
+  border-radius: 2px;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+/* Article Reverse */
+
+.article.reverse {
+  flex-direction: row-reverse;
+  margin-top: 4rem;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h3, .text h4 {
+  /* font-size: 22px; */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+.text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #f5c518;
+  border-radius: 2px;
+}
+
+.text h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #f5c518;
+  border-radius: 2px;
+}
+
+.text p {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.image img {
+  width: 500px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) {
+  .article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+
+/* Interested Section */
+
+
+.interest-section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.interest-section h2 {
+  /* font-size: 24px; */
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 5px 0;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.link {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .interest-section h2 {
+    text-align: center;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .quote, .link {
+    font-size: 14px;
+  }
+}
