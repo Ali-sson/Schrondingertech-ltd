@@ -418,6 +418,7 @@ background-image: url('../images/approach.jpeg');
 
 .hero-carousel {
   height: 70vh;
+  background-attachment: scroll;
 }
 .hero-content {
     padding-top: 9rem;

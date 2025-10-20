@@ -768,5 +768,6 @@ text-align: center;
 
 .hero-carousel {
   height: 70vh;
+  background-attachment: scroll;
 }
 }

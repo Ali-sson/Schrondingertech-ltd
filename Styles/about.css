@@ -402,5 +402,6 @@ background-image: url('../images/career2.jpeg');
 
 .hero-carousel {
   height: 70vh;
+  background-attachment: scroll;
 }
 }
