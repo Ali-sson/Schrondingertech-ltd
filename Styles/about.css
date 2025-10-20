@@ -134,7 +134,7 @@ background-image: url('../images/career2.jpeg');
 /*  */
 
 .our-story {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 5rem auto;
   padding: 0 2rem;
   text-align: center;
