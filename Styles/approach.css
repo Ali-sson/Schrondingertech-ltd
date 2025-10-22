@@ -429,3 +429,15 @@ background-image: url('../images/approach.jpeg');
     font-size: 1.6rem;
     margin-top: -2rem;
 } }
+
+/* Toggle arrow */
+
+@media (max-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+}

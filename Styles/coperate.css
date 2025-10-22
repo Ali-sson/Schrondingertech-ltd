@@ -406,3 +406,16 @@
 
 
 }
+
+/* toggle arrow */
+
+@media (max-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
+

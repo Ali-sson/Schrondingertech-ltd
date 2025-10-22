@@ -46,6 +46,8 @@
   transform: rotate(180deg);
 }
 
+
+
 /* Submenu hidden */
 .dropdown-menu {
   display: none;
@@ -716,6 +718,16 @@ background-image: url('../images/hero1.jpeg');
 }
 
 /* Responsive design */
+
+/* Desktop: show on hover */
+
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+
         @media (max-width: 1180px) {
           .dropdown.active .dropdown-menu {
     display: block;
@@ -836,4 +848,30 @@ background-image: url('../images/hero1.jpeg');
     height: auto;      /* no forced 300px height */
     max-height: 300px; /* optional: cap height */
   }
+
 }
+
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dropdown-toggle i {
+    display: inline-block !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
+

@@ -220,3 +220,20 @@ document.addEventListener('DOMContentLoaded', function() {
   io.observe(impact);
 });
 
+// 
+
+// Close mobile menu when any submenu link is clicked
+document.querySelectorAll(".dropdown-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    const navLinks = document.getElementById("nav-links");
+    const hamburger = document.getElementById("hamburger");
+    const icon = hamburger.querySelector("i");
+
+    // Remove the "show" class to hide the menu
+    navLinks.classList.remove("show");
+
+    // Switch icon back to bars
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  });
+});
