@@ -543,6 +543,8 @@ color: white;
 .talent-section h2 {
   font-weight: 700;
   color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
+  display: inline-block;
 }
 
 .subtitle2 {
@@ -642,6 +644,8 @@ color: white;
   color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 0.5rem;
+  border-bottom: 7px solid var(--color-accent);
+  display: inline-block;
 }
 
 .career-section .subtitle {
@@ -738,6 +742,8 @@ color: white;
 .contact-header h2 {
   color: var(--color-primary);
   margin-bottom: 10px;
+  border-bottom: 7px solid var(--color-accent);
+  display: inline-block;
 }
 
 .contact-header p {
@@ -955,10 +961,6 @@ color: white;
 } 
   
 }
-
-
-
-
 
 
 
