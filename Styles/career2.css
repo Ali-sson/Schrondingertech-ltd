@@ -481,7 +481,7 @@ background-image: url('../images/Hero-career.jpg');
 /* --- Subtitle --- */
 .why-join-us .subtitle {
   color: #555;
-  /* font-size: 1.4rem; */
+  font-size: 1.6rem;
   max-width: 780px;
   margin: 20px auto 60px;
   line-height: 1.7;
