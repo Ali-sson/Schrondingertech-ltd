@@ -214,8 +214,8 @@ background-image: url('../images/Hero-career.jpg');
   max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 4rem;
+.hero-content h1 {
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -223,7 +223,7 @@ background-image: url('../images/Hero-career.jpg');
 }
 
 .hero p {
-  /* font-size: 1.1rem; */
+  font-size: 1.6rem;
   margin-bottom: 2rem;
   color: #e0e0e0;
 }
@@ -271,15 +271,14 @@ background-image: url('../images/Hero-career.jpg');
   align-items: center;
   justify-content: center;
   gap: 50px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto 2rem;
   flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .life-image img {
   width: 100%;
-  max-width: 450px;
-  border-radius: 15px;
+  max-width: 600px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
 }
@@ -405,9 +404,9 @@ background-image: url('../images/Hero-career.jpg');
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  font-size: 3rem;
-color: white;
-  margin-bottom: 15px;
+  font-size: 5rem;
+  color: white;
+  margin: 0 auto 10px;
   text-align: center;
 }
 
@@ -436,6 +435,7 @@ color: white;
   /* font-size: 1.1rem; */
   color: var(--color-light);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .card2 h3 {
@@ -448,7 +448,118 @@ color: white;
   font-size: 1.4rem;
   color: var(--color-light);
   line-height: 1.6;
+  text-align: center;
 }
+
+
+/* why join us */
+
+/* ===============================
+   WHY JOIN US SECTION
+   =============================== */
+.why-join-us {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Heading --- */
+.why-join-us h2 {
+  color: #0056b3;
+  /* font-size: 2.3rem; */
+  margin-bottom: 10px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  border-bottom: 6px solid var(--color-accent);
+}
+
+
+/* --- Subtitle --- */
+.why-join-us .subtitle {
+  color: #555;
+  font-size: 1.4rem;
+  max-width: 780px;
+  margin: 20px auto 60px;
+  line-height: 1.7;
+}
+
+/* --- Card Container --- */
+.why-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* --- Each Card --- */
+.why-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 35px 25px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* --- Hover effect --- */
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 86, 179, 0.15);
+}
+
+/* --- Icon --- */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* --- Card Titles --- */
+.why-card h3 {
+  /* font-size: 1.3rem; */
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+/* --- Card Text --- */
+.why-card p {
+  /* font-size: 0.95rem; */
+  color: #444;
+  line-height: 1.7;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 900px) {
+  .why-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-card {
+    max-width: 100%;
+    padding: 25px 15px;
+  }
+
+  .why-join-us h2 {
+    font-size: 1.9rem;
+  }
+
+  .why-join-us .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+
+}
+
 
 /* Diverse */
 
@@ -541,13 +652,70 @@ color: white;
 }
 
 .talent-section h2 {
-  font-weight: 700;
   color: var(--color-primary);
-  border-bottom: 7px solid var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 6px solid var(--color-accent);
   display: inline-block;
 }
 
-.subtitle2 {
+.story-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.story-block.reverse {
+  flex-direction: row-reverse; /* alternate layout */
+}
+
+
+.story-text h4 {
+  font-weight: 700;
+  color: var(--color-primary);
+  border-bottom: 6px solid var(--color-accent);
+  display: inline-block;
+}
+
+/* Image styling */
+.story-image {
+  flex: 1; /* let image take equal space */
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 600px;   /* increase size */
+  height: 300px;
+  /* border-radius: 20px; */
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Text styling */
+.story-text {
+  flex: 1; /* give text more room than image */
+}
+
+
+.story-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.story-text li {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: rgb(53, 51, 51);
+}
+
+/* .subtitle2 {
   margin-top: 10px;
   font-size: 2rem;
 }
@@ -558,20 +726,20 @@ color: white;
   max-width: 700px;
   margin: 10px auto 40px;
   line-height: 1.6;
-}
+} */
 
 /* Two-by-two grid layout */
-.cards-1-container {
+/* .cards-1-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   justify-content: center;
-}
+} */
 
 
-.card-1 {
+/* .card-1 { */
   /* background: linear-gradient(135deg, #338df5 0%, #00c6ff 100%); */
-  background: var(--color-primary-dark);
+  /* background: var(--color-primary-dark);
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   padding: 30px;
@@ -580,10 +748,10 @@ color: white;
   transition: all 0.35s ease;
   position: relative;
   overflow: hidden;
-}
+} */
 
 /* Glossy shine effect */
-.card-1::before {
+/* .card-1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -606,19 +774,19 @@ color: white;
 .card-1:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-}
+} */
 
 /* Headings & text inside */
-.card-1 h3 {
+/* .card-1 h3 {
   margin-bottom: 12px;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #e2e8f0; /* soft grayish white */
+  color: #e2e8f0; /* soft grayish white 
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.card-1 p {
-  color: #e0f2fe; /* soft cyan tint that complements the blue */
+/* .card-1 p {
+  color: #e0f2fe; /* soft cyan tint that complements the blue 
   line-height: 1.7;
   font-size: 1.2rem;
 }
@@ -627,7 +795,7 @@ color: white;
   margin-bottom: 8px;
   margin-left: 20px;
   font-size: 1.1rem;
-}
+} */
 
 /* Career Opportunities */
 
@@ -644,7 +812,7 @@ color: white;
   color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 0.5rem;
-  border-bottom: 7px solid var(--color-accent);
+  border-bottom: 6px solid var(--color-accent);
   display: inline-block;
 }
 
@@ -661,75 +829,92 @@ color: white;
   font-weight: 600;
 }
 
-/* Card grid layout */
-.career-grid {
+
+/* Programme caard */
+
+
+.programmes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card-apply {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Card styling */
-.career-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  padding: 25px;
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.career-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.career-card h4 {
-  font-size: 1.8rem;
-  /* color: var(--color-primary-dark); */
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-}
-
-.career-card .department {
-  color: #64748b;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 1.1rem;
-  color: #475569;
-  margin-bottom: 1.5rem;
-}
-
-/* Apply button */
-.apply-btn {
-  display: block;
+.card-apply img {
   width: 100%;
-  background: var(--color-primary);
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+}
+
+.card-apply:hover img {
+  transform: scale(1.05);
+}
+
+.card-apply:hover img {
+  transform: scale(1.05);
+}
+
+.card-text {
+  position: absolute;
+  left: 0;          /* ✅ ensure overlay starts at the left edge */
+  right: 0;         /* ✅ ensure it ends at the right edge */
+  bottom: 0;        /* ✅ pin to bottom */
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;      /* ✅ guarantee full width coverage */
+  box-sizing: border-box;
+}
+
+
+
+/* ✅ Button Below All Cards */
+.apply-container {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.apply-btn {
+  padding: 12px 30px;
   border: none;
-  border-radius: 6px;
-  padding: 10px 0;
-  font-weight: 600;
+  outline: none;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 .apply-btn:hover {
-  background: var(--color-primary-dark);
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
 }
 
-/* Footer text */
-.footer-text {
-  margin-top: 3rem;
-  color: black;
-  /* font-size: 0.95rem; */
+.hr-text {
+  max-width: 700px;
+  margin: 20px auto 0;
+  font-size: 1.4rem;
+  color: #475569;
+  line-height: 1.6;
+  text-align: center;
 }
+
 
 /* contact our Hr */
 
@@ -742,7 +927,7 @@ color: white;
 .contact-header h2 {
   color: var(--color-primary);
   margin-bottom: 10px;
-  border-bottom: 7px solid var(--color-accent);
+  border-bottom: 6px solid var(--color-accent);
   display: inline-block;
 }
 
@@ -822,9 +1007,6 @@ color: white;
   background: var(--color-primary-dark);
 }
 
-
-
-/*  interest section  */
 
 
 
@@ -1036,7 +1218,19 @@ color: var(--color-primary);
     color: var(--text-dark);
     margin-left: 5px;
   }
+   .story-block,
+  .story-block.reverse {
+    flex-direction: column; /* stack on mobile */
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .story-image img {
+    max-width: 100%;
+  }
 }
+
+
 
 
 
