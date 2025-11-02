@@ -237,3 +237,13 @@ document.querySelectorAll(".dropdown-menu a").forEach(link => {
     icon.classList.add("fa-bars");
   });
 });
+
+// Articles toggle
+
+ // Accordion Toggle
+    document.querySelectorAll('.article-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+      });
+    });
