@@ -236,7 +236,7 @@ document.querySelectorAll(".dropdown-menu a").forEach(link => {
     icon.classList.remove("fa-times");
     icon.classList.add("fa-bars");
   });
-});
+}); 
 
 // Articles toggle
 
