@@ -234,7 +234,7 @@ background-image: url('../images/hero1.jpeg');
 
 .about-content .description {
   /* font-size: 1.6rem; */
-  line-height: 1.5;
+  line-height: 1.9;
   margin: 1rem 0;
   /* text-align: justify; */
   color: var(--text-black);
