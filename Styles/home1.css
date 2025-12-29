@@ -508,13 +508,13 @@ background-image: url('../images/hero1.jpeg');
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      color: #fff;
+      background: var(--color-light);
+      color: var(--color-accent);
       border: none;
       padding: 12px;
       cursor: pointer;
       border-radius: 50%;
-      font-size: 18px;
+      font-size: 30px;
       transition: background 0.3s;
     }
 
