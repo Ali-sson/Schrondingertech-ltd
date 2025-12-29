@@ -508,12 +508,12 @@ background-image: url('../images/hero1.jpeg');
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: var(--color-light);
+      background: none;
       color: var(--color-accent);
       border: none;
-      padding: 12px;
+      /* padding: 2px; */
       cursor: pointer;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       font-size: 30px;
       transition: background 0.3s;
     }
