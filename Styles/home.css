@@ -34,18 +34,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: Lato, "Helvetica", sans-serif;
+  /* font-family: Lato, "Helvetica", sans-serif; */
 
 
 }
 
 
 .Quote {
-  display: inline-flex;            /* lets us center text */
   justify-content: center;         /* center horizontally */
   align-items: center;             /* center vertically */
   font-size: 1.4rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border-radius: 5px;
   background: #0073C7;
   color: #fff;
@@ -174,11 +173,6 @@ h6 {
   display: none;
 }
 
-/* Quote Button */
-.quote {
-  background-color: var(--color-primary);
-}
-
 /* Footer */
 footer {
   font-size: clamp(0.8rem, 1.2vw, 0.9rem);
@@ -239,7 +233,8 @@ p {
 }
 
 .button:hover {
-  border-color: #FCCB06;
+  border-color: white;
+  color: var(--color-accent);
 }
 
 .btn:hover {
