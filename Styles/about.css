@@ -513,10 +513,13 @@ background-image: url('../images/career2.jpeg');
 .clean {
   font-size: 3.5rem;
 }
+
+}
+
+@media (max-width: 768px) {
   .value-card {
     max-width: 100%;
   }
-
 }
 
 /* Desktop: show on hover */
