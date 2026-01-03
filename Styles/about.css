@@ -105,16 +105,26 @@ background-image: url('../images/career2.jpeg');
   z-index: 1;
   padding: 0 2rem;
   text-align: center;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
+
 .hero-content h1 {
-  /* font-size: 5rem; */
+  font-size: 5rem;
+  padding-left: 5rem;
   margin: 0 auto;
   letter-spacing: -2px;
   color: aliceblue;
-  font-family: "Oswald", sans-serif;
+  font-family: Lato, "Helvetica", sans-serif;
+  text-align: left;
+  
+
+}
+
+.clean {
+ color: var(--color-accent);
+  font-size: 5rem;
 }
 
 .hero-content a {
@@ -153,8 +163,10 @@ background-image: url('../images/career2.jpeg');
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 5rem;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
 }
 
 .story-block.reverse {
@@ -188,9 +200,10 @@ background-image: url('../images/career2.jpeg');
   text-align: justify;
 }
 
-/*  *//* Fixed Mission Background */
-/* Fixed Mission Background */
+
 /* Mission Section with its own background */
+
+
 .mission-vision {
   position: relative;
   padding: 6rem 2rem;
@@ -238,7 +251,7 @@ background-image: url('../images/career2.jpeg');
 }
 
 .card .icon {
-  font-size: 3rem;
+  font-size: 7rem;
   margin-bottom: 1rem;
   color: #fff;
   text-align: center;
@@ -249,7 +262,8 @@ background-image: url('../images/career2.jpeg');
 .core-values {
   padding: 5rem 2rem;
   text-align: center;
-  background: var(); /* soft brand secondary */
+  margin: 0 auto;
+
 }
 
 .core-values h2 {
@@ -260,7 +274,7 @@ background-image: url('../images/career2.jpeg');
   border-bottom: 7px solid var(--color-accent);
 }
 
-.values-grid {
+/* .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -271,11 +285,12 @@ background-image: url('../images/career2.jpeg');
 .value-card {
   padding: 2rem;
   border-radius: 1rem;
-  background: #1565c0; /* default (will be overridden by nth-child) */
-  color: #fff; /* Make all text white by default */
+  background: #1565c0;
+  color: #fff; 
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, background 0.3s ease;
 }
+
 
 .value-card:hover {
   transform: translateY(-5px);
@@ -289,9 +304,9 @@ background-image: url('../images/career2.jpeg');
 }
 .value-card h3 {
   margin-bottom: 1rem;
-  /* font-size: 1.3rem; */
+  /* font-size: 1.3rem; 
   font-weight: 600;
-  color: #fff; /* strong white for titles */
+  color: #fff;  strong white for titles 
 }
 
 .value-card ul {
@@ -316,7 +331,7 @@ background-image: url('../images/career2.jpeg');
 .value-card {
   padding: 2rem;
   border-radius: 1rem;
-  color: #fff; /* default text white */
+  color: #fff; /* default text white 
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
@@ -324,26 +339,106 @@ background-image: url('../images/career2.jpeg');
 .value-card p {
   font-size: 1rem;
   line-height: 1.5;
-  color: rgba(255,255,255,0.85); /* softer white for paragraphs */
+  color: rgba(255,255,255,0.85); 
   text-align: left;
 }
 
 .value-card i {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #fff; /* icons adapt (stay white) */
+  color: #fff; 
 }
 
-/* Different backgrounds */
-.value-card:nth-child(1) { background: #00796b; }   /* Teal */
-.value-card:nth-child(2) { background: #1565c0; }   /* Blue */
-.value-card:nth-child(3) { background: #f57c00; }   /* Orange */
-.value-card:nth-child(4) { background: #6a1b9a; }   /* Purple */
-.value-card:nth-child(5) { background: #2e7d32; }   /* Green */
+.value-card:nth-child(1) { background: #00796b; }  
+.value-card:nth-child(2) { background: #1565c0; }   
+.value-card:nth-child(3) { background: #f57c00; }   
+.value-card:nth-child(4) { background: #6a1b9a; }   
+.value-card:nth-child(5) { background: #2e7d32; }   
 
-/* Hover effect */
+/* Hover effect 
 .value-card:hover {
   transform: translateY(-5px);
+} */
+
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+.value-card {
+  width: 200px;
+  height: 180px;
+  border-radius: 15px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+/* different card colors */
+
+.value-card:nth-child(1) { background: #00796b; }  
+.value-card:nth-child(2) { background: #1565c0; }   
+.value-card:nth-child(3) { background: #f57c00; }   
+.value-card:nth-child(4) { background: #6a1b9a; }   
+.value-card:nth-child(5) { background: #2e7d32; } 
+
+
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+
+/* Flip the whole card */
+.value-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Front */
+.card-front {
+  background: none;
+}
+
+/* Back */
+.card-back {
+  background: none;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+.card-back p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Optional styling */
+.card-front i {
+  font-size: 60px;
+  color: #fff;
+}
+
+.card-front h3 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
 }
 
 
@@ -367,12 +462,7 @@ background-image: url('../images/career2.jpeg');
 
 /* Responsiveness */
 
-/* Desktop: show on hover */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
+
 
 /* Mobile: show on click */
 @media (max-width: 1180px) {
@@ -405,3 +495,31 @@ background-image: url('../images/career2.jpeg');
   background-attachment: scroll;
 }
 }
+
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+     .Quote {
+    display: none;
+  }
+ .hero-content h1 {
+  letter-spacing: -1.5px;
+  font-size: 3.5rem;
+  padding-left: 2rem;
+} 
+.clean {
+  font-size: 3.5rem;
+}
+
+}
+
+/* Desktop: show on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+}
+
+
