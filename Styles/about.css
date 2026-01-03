@@ -365,7 +365,8 @@ background-image: url('../images/career2.jpeg');
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  padding: 3rem;
+  width: 100%;
+  padding: 0 16px;
 }
 .value-card {
   width: 100%;
@@ -512,6 +513,9 @@ background-image: url('../images/career2.jpeg');
 .clean {
   font-size: 3.5rem;
 }
+  .value-card {
+    max-width: 100%;
+  }
 
 }
 
