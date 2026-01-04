@@ -7,6 +7,8 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 <!-- Google Fonts: Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Custom Styles -->
@@ -85,10 +87,10 @@
    <div class="hero-carousel">
   <div class="hero-content">
     <h1 class="fade-in">Our Approach</h1>
-     <p class="approach-text fade-in">We are committed to engineering excellence in water, and waste water solutions. We design, develop, and implement cutting-edge
+     <!-- <p class="approach-text fade-in">We are committed to engineering excellence in water, and waste water solutions. We design, develop, and implement cutting-edge
 water purification and wastewater treatment systems powered by sustainable energy sources. Our solutions serve households,
 communities, NGOs, refugee camps, schools, hospitals, processing companies, and agricultural irrigation projects.
-</p>
+</p> -->
   </div>
 </div>
 
@@ -97,14 +99,22 @@ communities, NGOs, refugee camps, schools, hospitals, processing companies, and 
 
 
 <section class="our-approach">
+<div class="approach-heading">
+    <h2>Our Approach</h2>
+    <p>We are committed to engineering excellence in water, and waste water solutions. We design, develop, and implement cutting-edge
+water purification and wastewater <br>treatment systems powered by sustainable energy sources. Our solutions serve households,
+communities, NGOs, refugee camps, schools, hospitals, processing companies, and agricultural irrigation projects</p>
+
+</div>
+
    
 
   <!-- Block 1 -->
   <div class="story-block">
-    <div class="story-image">
+    <div class="story-image" data-aos="fade-right">
       <img src="../images/disaster-relief.jpeg" alt="Our beginning">
     </div>
-    <div class="story-text fade-in-right">
+    <div class="story-text" data-aos="fade-left">
         <h2>Disaster Relief</h2>
       <p>When disaster strikes, clean water is often the first and most urgent
 need. Contaminated or unavailable water supplies can turn an
@@ -119,12 +129,14 @@ clean water.</p>
     </div>
   </div>
 
+  
+
   <!-- Block 2 (reversed layout) -->
   <div class="story-block reverse">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-left">
       <img src="../images/household.jpg" alt="Our growth">
     </div>
-    <div class="story-text fade-in-left">
+    <div class="story-text" data-aos="fade-right">
         <h2>Household</h2>
       <p>Every family deserves the peace of mind that comes with
 clean, safe drinking water. Our household purification
@@ -144,10 +156,10 @@ daily reality for homes everywhere.</p>
 
   <!-- Block 3 -->
   <div class="story-block">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-right">
       <img src="../images/hospital.jpg" alt="Our vision">
     </div>
-    <div class="story-text fade-in-right">
+    <div class="story-text" data-aos="fade-left">
         <h2>Hospitals</h2>
       <p>Healthcare facilities cannot afford to compromise on water quality.
 From surgical procedures to cleaning, sterilization, and patient
@@ -167,10 +179,10 @@ saving lives.</p>
   
   <!-- Block 4 (reversed layout) -->
   <div class="story-block reverse">
-    <div class="story-image">
+    <div class="story-image" data-aos="fade-left">
       <img src="../images/farming.jpeg" alt="Our growth">
     </div>
-    <div class="story-text fade-in-left">
+    <div class="story-text" data-aos="fade-right">
         <h2>Farming</h2>
       <p>Water is not only vital for people, it is the lifeline of
 agriculture. Without reliable irrigation, farming cannot sustain
@@ -191,10 +203,10 @@ systems for tomorrow.</p>
 
     <!-- Block 5 -->
   <div class="story-block">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-right">
       <img src="../images/wastewater.jpg" alt="Our vision">
     </div>
-    <div class="story-text fade-in-right">
+    <div class="story-text" data-aos="fade-left">
         <h2>Wastewater</h2>
       <p>Water scarcity is one of the greatest global challenges, and
 wasting water is no longer an option. Our wastewater
@@ -217,10 +229,10 @@ saving water, it’s about securing the future.
   
   <!-- Block 6 (reversed layout) -->
   <div class="story-block reverse">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-left">
       <img src="../images/resident.jpg" alt="Our growth">
     </div>
-    <div class="story-text fade-in-left">
+    <div class="story-text" data-aos="fade-right">
         <h2>Rural Development</h2>
       <p>Water is the foundation of development, and in rural areas, it
 often defines the difference between progress and poverty.
@@ -240,10 +252,10 @@ transformation.</p>
 
     <!-- Block 7 -->
   <div class="story-block">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-right">
       <img src="../images/hotel.jpg" alt="Our vision">
     </div>
-    <div class="story-text fade-in-right">
+    <div class="story-text" data-aos="fade-left">
         <h2>Hotels and Residents</h2>
       <p>In the hospitality and real estate industries, guest satisfaction and
 resident trust depend on the quality of amenities and water is at
@@ -264,10 +276,10 @@ and value.</p>
   
   <!-- Block 8 (reversed layout) -->
   <div class="story-block reverse">
-    <div class="story-image">
+    <div class="story-image " data-aos="fade-left">
       <img src="../images/water-fac.jpg" alt="Our growth">
     </div>
-    <div class="story-text fade-in-left">
+    <div class="story-text" data-aos="fade-right">
         <h2>Water Factories</h2>
       <p>For industries and water bottling plants, water is both a product and
 a resource that requires the highest quality standards. Our water
@@ -291,25 +303,29 @@ confidence.</p>
 
 
 
+  
+  <!-- Interested Section -->
+
 <section class="interest">
-     <h2>You May Be Interested</h2>
   <div class="interest-container">
     <!-- Interest 1 -->
     <div class="interest-card interest1">
       <div class="interest-content">
-        <a href="#" class="btn">Our Services</a>
+        <h3> Discover the Mission  <br>
+           Driving Our Innovation</h3>
+        <a href="About/story.html" class="btn">Our Products</a>
       </div>
     </div>
 
     <!-- Interest 2 -->
     <div class="interest-card interest2">
       <div class="interest-content">
-        <a href="#" class="btn">Our Products</a>
+        <h3>Find the Perfect <br> Solution for Your Water</h3>
+        <a href="Solutions/products.html" class="btn">Our Solutions</a>
       </div>
     </div>
   </div>
 </section>
-
 
   <footer>
     <div class="footer-container">
@@ -377,5 +393,15 @@ confidence.</p>
 
 
   <script src="./solutions.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,      // animate only once
+    easing: 'ease-out-cubic'
+  });
+</script>
+
 </body>
 </html>

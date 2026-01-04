@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 
 
-/* Navigation Links */
+* Navigation Links */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -139,31 +145,33 @@ background-image: url('../images/approach.jpeg');
 
 /* Approach Section */
 
-.our-approach {
-    background: #fff;
-    padding: 2rem 0;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: var(--text-dark);
+.approach-heading {
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #ffff;
+  margin-bottom: 3rem;
 }
 
-.approach-text {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin: 4rem 2rem;
-    padding: 3rem;
-    color: #f9f9f9;
+.approach-heading h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  border-bottom: 7px solid var(--color-accent);
+  display: inline-block;
 }
+
+
 
 /* Each block */
 .story-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 5rem;
-  padding: 2rem 2rem;
+  gap: 1rem;
+  /* margin-bottom: 5rem; */
+  padding: 0 4rem;
 }
 
 .story-block.reverse {
@@ -263,10 +271,10 @@ background-image: url('../images/approach.jpeg');
 
 /* Interested section  */
 
+
 .interest {
-    background: #f9f9f9;
-    padding: 0.5rem 0 2rem;
-    text-align: center;
+  text-align: center;
+  background: white;
 }
 
     .interest-container {
@@ -274,27 +282,25 @@ background-image: url('../images/approach.jpeg');
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       max-width: 1200px;
-      margin: 4rem auto;
+      margin: auto;
+      text-align: center;
     }
 
     .interest h2 {
-      display: inline-block;
-      text-align: center;
-      margin: 10rem 0 1rem;
-      color: #0073C7;
-      /* font-size: 2.5rem; */
-      border-bottom: 5px solid var(--color-accent);
+      display: inline-block; /* shrinks to text width */
+  margin: 10rem auto 1rem;
+  color: #0073C7;
+  border-bottom: 5px solid var(--color-accent);
     }
 
     .interest-card {
       position: relative;
-      border-radius: 10px;
-      overflow: hidden; 
+      overflow: hidden;
       height: 400px;
       display: flex;
       align-items: flex-end;
       color: #fff;
-      margin-top: 3rem;
+      margin : 3rem 0;
 
     }
 
@@ -309,31 +315,32 @@ background-image: url('../images/approach.jpeg');
       position: relative;
       padding: 1.5rem;
       z-index: 1;
+      text-align: left;
     }
 
     .interest-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 0rem;
     }
 
     .btn {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
+      padding: 1rem 1rem;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
       font-size: 1.4rem;
       transition: all 0.3s ease;
-      background: var(--color-primary);
+      border: 5px solid var(--color-accent);
+      text-align: left;
+     
     }
 
     .btn:hover {
       background: var(--color-primary-dark);
       color: var(--color-light);
+      text-decoration: none;
     }
-
     /* Background images */
     .interest1 {
       background: url("../images/interest-services.jpeg") center/cover no-repeat;

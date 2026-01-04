@@ -1,6 +1,15 @@
 * General Styles */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
 /* Navigation Links */
 .nav-links {
   display: flex;
@@ -514,7 +523,7 @@ background-image: url('../images/hero1.jpeg');
 
     .image-slide h5 {
       margin-top: 0.5rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: var(--text-black);
     }
 
@@ -618,7 +627,6 @@ background-image: url('../images/hero1.jpeg');
 
     .interest-card {
       position: relative;
-      border-radius: 10px;
       overflow: hidden;
       height: 400px;
       display: flex;
@@ -930,6 +938,10 @@ background-image: url('../images/hero1.jpeg');
 
   .dropdown.active .dropdown-menu {
     display: block;
+  }
+
+   .interest-content h3 {
+    font-size: 2.5rem;
   }
 }
 

@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -105,8 +106,9 @@ background-image: url('../images/career2.jpeg');
   z-index: 1;
   padding: 0 2rem;
   text-align: center;
-  top: 35%;
+  top: 50%;
   transform: translateY(-50%);
+
 }
 
 
@@ -443,6 +445,89 @@ background-image: url('../images/career2.jpeg');
   font-size: 2rem;
 }
 
+/* Interest Section */
+
+/* Interested section  */
+
+.interest {
+  text-align: center;
+  background: white;
+}
+
+    .interest-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .interest h2 {
+      display: inline-block; /* shrinks to text width */
+  margin: 10rem auto 1rem;
+  color: #0073C7;
+  border-bottom: 5px solid var(--color-accent);
+    }
+
+    .interest-card {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+
+    }
+
+    .interest-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4); /* dark overlay */
+    }
+
+    .interest-content {
+      position: relative;
+      padding: 1.5rem;
+      z-index: 1;
+      text-align: left;
+    }
+
+    .interest-card h3 {
+      font-size: 3rem;
+      margin-bottom: 0rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      border: 5px solid var(--color-accent);
+      text-align: left;
+     
+    }
+
+    .btn:hover {
+      background: var(--color-primary-dark);
+      color: var(--color-light);
+      text-decoration: none;
+    }
+
+    /* Background images */
+    .interest1 {
+      background: url("../images/career1.jpeg") center/cover no-repeat;
+    }
+
+    .interest2 {
+      background: url("../images/product3.jpg") center/cover no-repeat;
+    }
 
 
 /* Responsive */
