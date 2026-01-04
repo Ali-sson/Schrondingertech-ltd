@@ -403,5 +403,29 @@ confidence.</p>
   });
 </script>
 
+<script>
+  function setAOSAnimations() {
+    const isMobile = window.innerWidth <= 768;
+
+    document.querySelectorAll('[data-aos]').forEach(el => {
+      if (isMobile && el.dataset.aosMobile) {
+        el.setAttribute('data-aos', el.dataset.aosMobile);
+      }
+    });
+
+    AOS.refresh();
+  }
+
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+
+  setAOSAnimations();
+  window.addEventListener('resize', setAOSAnimations);
+</script>
+
+
 </body>
 </html>
