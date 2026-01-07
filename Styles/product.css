@@ -1,15 +1,3 @@
-/* Hero section background */
-.hero-carousel {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  color: white;
-background-image: url('../images/services-hero.jpeg');
-  background-size: cover;
-  background-position: center;
-   background-attachment: scroll; /* default */
-  background-attachment: fixed; /* fallback for desktop */
-}
 
 .cta-image {
   position: absolute;
