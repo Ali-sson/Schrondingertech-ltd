@@ -124,7 +124,7 @@ background-image: url('../images/intern.jpg');
 
 .clean {
  color: var(--color-accent);
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .hero-content a {
@@ -136,6 +136,16 @@ background-image: url('../images/intern.jpg');
   margin-top: 1rem;
   transition: background 0.3s;
 }
+
+/* hero-text */
+.hero-p {
+  font-size: 2rem;
+  color: #ddd;
+  text-align: left;
+  padding-left: 5rem;
+  margin-top: 1rem;
+}
+
 
 .hero-content a:hover {
   background: var(--color-primary-dark);

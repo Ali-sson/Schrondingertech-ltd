@@ -114,21 +114,33 @@ background-image: url('../images/Lifeat.jpg');
   z-index: 1;
   padding: 0 2rem;
   text-align: center;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
-.hero-content h1 {
-  /* font-size: 5rem; */
-  margin: 0 auto;
-  letter-spacing: -2px;
-  color: var(--bg-light);
-  font-family: "Oswald", sans-serif;
+/* hero-text */
+.hero-p {
+  font-size: 2rem;
+  color: #ddd;
+  text-align: left;
+  padding-left: 5rem;
+  margin-top: 1rem;
 }
 
-.hero-content p {
-  font-size: 1.6rem;
-  margin-top: -2rem;
+.hero-content h1 {
+  font-size: 7rem;
+  padding-left: 5rem;
+  margin: 0 auto;
+  letter-spacing: -2px;
+  color: aliceblue;
+  font-family: Lato, "Helvetica", sans-serif;
+  text-align: left;
+
+}
+
+.clean {
+ color: var(--color-accent);
+  font-size: 7rem;
 }
 
 .hero-content a {
@@ -136,13 +148,15 @@ background-image: url('../images/Lifeat.jpg');
   background: var(--color-primary);
   color: white;
   padding: 1.5rem 1.5rem;
-  border-radius: 10px;
+ border: 5px solid var(--color-accent);
   margin-top: 1rem;
   transition: background 0.3s;
+  font-family: lato, "Helvetica", sans-serif;
 }
 
 .hero-content a:hover {
   background: var(--color-primary-dark);
+  border: 5px solid white;
 }
 
 
@@ -153,14 +167,21 @@ background-image: url('../images/Lifeat.jpg');
   padding: 0 1rem;
 }
 
+.research-intro h2 {
+  /* font-size: 32px; */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
 
 /* Focus Section */
 
 
     .focus-section {
       text-align: center;
-      padding: 40px 20px 20px;
-      background: #f9f9f9;
+      padding: 40px auto;
+      background: var(--color-light)
     }
 
     .focus-section h2 {
@@ -170,21 +191,26 @@ background-image: url('../images/Lifeat.jpg');
       color: var(--color-primary);
     }
 
+    /* .focus-section p {
+      margin-bottom: 2rem;
+    } */
+
 
     .focus-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 5px;
+      max-width: 1400px;
       margin: 0 auto;
     }
 
     .focus-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      /* background: var(--color-light); */
+      /* border-radius: 10px; */
+      /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
       padding: 20px;
       transition: transform 0.3s ease;
+      text-align: left;
     }
 
     .focus-card:hover {
@@ -193,9 +219,9 @@ background-image: url('../images/Lifeat.jpg');
 
     .focus-card img {
       width: 100%;
-      height: 200px;
+      height: 150px;
+      border-radius: 5px;
       object-fit: cover;
-      border-radius: 8px;
       margin-bottom: 15px;
     }
 
@@ -203,29 +229,154 @@ background-image: url('../images/Lifeat.jpg');
       font-size: 1.6rem;
       margin: 1rem 0;
       color: #111;
+      text-align: left;
     }
 
     .focus-card p {
       font-size: 1.4rem;
       line-height: 1.6;
       color: #444;
-      margin-top: 3rem;
+      text-align: left;
+    }
+    .note {
+      font-size: 1.4rem;
+      padding-bottom: 3rem;
+     
+    }
+
+    /*  */
+
+    
+/* CTA Section */
+.cta-section1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  color: #fff;
+  height: 500px;
+}
+
+
+
+.cta-section1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--color-primary) 0%,
+    var(--color-primary) 40%,
+    rgba(79, 70, 229, 0) 70%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+.cta-container1 {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+}
+
+
+
+.cta-container1 h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  z-index: 2;
+}
+
+.cta-container1 h2 span {
+  color: var(--color-accent); 
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.cta-container1 p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #f9f9f9;
+  text-align: left;
+}
+
+/* button parent */
+
+.btn-contact {
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  display: align-left;
+  background: #fff;
+  color: var(--color-primary);
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 5px solid var(--color-accent);
+}
+
+.cta-button:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+
+.cta-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cta-image img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+
+    /* current research section */
+
+    .current-research {
+      background: white;
+    }
+
+    .current-research-grid {
+     max-width: 1000px;
+     background-color: white;
+    
     }
 
     /* Upcoming Technologies Section */
 
   .upcoming-technologies {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 5rem auto;
   padding: 20px;
-}
+  background-color: var(--color-primary-dark);
+  }
 
 h2 {
   /* font-size: 26px; */
   font-weight: bold;
   position: relative;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-light);
 }
 
 h2::after {
@@ -242,7 +393,7 @@ h2::after {
 .intro {
   margin-top: 1.5rem;
   /* font-size: 1rem; */
-  color: #333;
+  color: white;
 }
 
 .main {
@@ -253,31 +404,37 @@ h2::after {
 }
 
 .image img {
-  width: 450px;
-  border-radius: 10px;
+  width: 800px;
   max-width: 100%;
+}
+
+.text {
+  color: white;
 }
 
 .text ul {
   list-style: none;
   padding: 2rem;
   font-size: 16px;
+  
 }
 
 .text li {
   margin-bottom: 1rem;
   line-height: 1.6;
   font-size: 1.4rem;
+  color: #f9f9f9;
 }
 
 .text strong {
-  color: #000;
+  color: #f9f9f9;
 }
 
 .footer-update {
   margin-top: 2rem;
   font-size: 1.6rem;
-  color: #333;
+  color: #f9f9f9;
+  text-align: right;
 }
 
 .footer-update span {
@@ -396,6 +553,9 @@ font-size: 1.4rem;
 .collab-btn:hover {
   background-color: var(--primary-dark, #005fa3);
 }
+
+
+/* CTA Section */
 
 
 
@@ -576,8 +736,8 @@ h2::after {
 }
 
 .article-header img {
-  width: 45px;
-  height: 45px;
+  width: 100px;
+  height: 100px;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -636,29 +796,53 @@ h2::after {
   border-radius: 12px;
   margin: 5rem auto;
   max-width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
 
-.cta-container h2 {
+.cta-container {
+display: flex;
+text-align: left;
+}
+
+.cta-container img {
+  width: 500px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+
+
+.cta-container h3 {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
-color: white;
+  color: white;
+  text-align:left;
+  border-bottom: 5px solid var(--color-accent);
+  display: inline-block;
 }
 
-.cta-container p {
-  font-size: 1.6rem;
+.join-text {
+  margin-top: 1rem;
+  color: #f9f9f9;
+}
+
+.cta-section p {
+  /* font-size: 1.6rem; */
   margin-bottom: 1rem;
   line-height: 1.6;
+  text-align: left;
+  color: #f9f9f9;
 }
 
 .cta-button {
   display: inline-block;
   background: #fff;
   color: var(--color-primary);
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
+  padding: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  border-radius: 8px;
   text-decoration: none;
   margin-top: 2rem;
   transition: all 0.3s ease;
@@ -672,11 +856,7 @@ color: white;
 
 
 
-
-
-
-/* Interested Section */
-
+/* Interested section  */
 
 /* Interested section  */
 
@@ -692,7 +872,6 @@ color: white;
       max-width: 1200px;
       margin: auto;
       text-align: center;
-      padding: 3rem;
     }
 
     .interest h2 {
@@ -704,7 +883,6 @@ color: white;
 
     .interest-card {
       position: relative;
-      border-radius: 10px;
       overflow: hidden;
       height: 400px;
       display: flex;
@@ -725,29 +903,31 @@ color: white;
       position: relative;
       padding: 1.5rem;
       z-index: 1;
+      text-align: left;
     }
 
     .interest-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 0rem;
     }
 
     .btn {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
+      padding: 1rem 1rem;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
       font-size: 1.4rem;
       transition: all 0.3s ease;
-      background: var(--color-primary);
+      border: 5px solid var(--color-accent);
+      text-align: left;
+     
     }
 
     .btn:hover {
       background: var(--color-primary-dark);
       color: var(--color-light);
+      text-decoration: none;
     }
 
     /* Background images */

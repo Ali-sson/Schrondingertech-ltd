@@ -237,9 +237,6 @@ p {
   color: var(--color-accent);
 }
 
-.btn:hover {
-  text-decoration: underline;
-}
 
 
 

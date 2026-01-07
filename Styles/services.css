@@ -43,4 +43,13 @@ background-image: url('../images/services-hero.jpeg');
   .cta-text {
     display: none;
   }
+
+    .hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
 }
+.Quote {
+  display: none;
+}
+}
+
