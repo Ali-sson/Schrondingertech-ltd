@@ -786,6 +786,22 @@ text-align: center;
   display: none;
   }
 
+    .hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
+}
+.hero-content h1 {
+  letter-spacing: -1.5px;
+  font-size: 3.5rem;
+} 
+.clean {
+  font-size: 3.5rem;
+}
+.hero-p {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
 
     /* Responsiveness */
 

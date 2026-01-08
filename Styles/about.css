@@ -615,13 +615,28 @@ background-image: url('../images/career2.jpeg');
   .value-card {
     max-width: 100%;
   }
+  .hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
 }
-
+.hero-content h1 {
+  letter-spacing: -1.5px;
+  font-size: 3.5rem;
+} 
+.clean {
+  font-size: 3.5rem;
+}
+.hero-p {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+}
 /* Desktop: show on hover */
 @media (min-width: 769px) {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+
   
 }
 

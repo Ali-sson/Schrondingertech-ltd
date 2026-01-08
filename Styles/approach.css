@@ -508,4 +508,20 @@ background-image: url('../images/hero1.jpeg');
 
   .Quote {
     display: none;
-   } }
+   }
+  .hero-content h1 {
+  letter-spacing: -1.5px;
+  font-size: 3.5rem;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+} 
+.clean {
+  font-size: 3.5rem;
+}
+.hero-p {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+} 
+.hero-content {
+  top: 25%;
+} }
