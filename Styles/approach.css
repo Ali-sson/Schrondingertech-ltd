@@ -6,8 +6,15 @@
 }
 
 
+header,
+nav {
+  position: relative;
+  z-index: 9999;
+}
 
-* Navigation Links */
+
+
+/* * Navigation Links */ */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -54,7 +61,7 @@
 }
 
 /* Submenu hidden */
-.dropdown-menu {
+/* .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -65,7 +72,21 @@
   border-radius: 6px;
   overflow: hidden;
   z-index: 999;
+} */
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 10000;
 }
+
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
@@ -104,7 +125,9 @@ background-image: url('../images/approach.jpeg');
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* darkness */
   z-index: 0;
+   pointer-events: none;
 }
+
 
 .hero-content {
   position: relative;
@@ -246,10 +269,12 @@ background-image: url('../images/approach.jpeg');
   max-width: 1400px;
   margin: 5rem auto;
   padding: 0 2rem;
-  overflow: hidden;
   color: #fff;
   height: 500px;
+    overflow: visible;
 }
+
+  
 
 
 

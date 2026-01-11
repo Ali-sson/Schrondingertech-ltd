@@ -1259,6 +1259,46 @@ color: var(--color-primary);
 
 /* Toggle arrow */
 
+@media (max-width: 1180px) {
+  .dropdown.active .dropdown-menu {
+    display: block;
+    position: static; /* makes it stack nicely */
+    box-shadow: none;
+    background: #f9f9f9;
+    /* margin-top: 5px; */
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    position: absolute;
+    top: 70px; /* adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+    .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
+}
+.hero-content {
+    padding-top: 9rem;
+}
+
+.hero-content p {
+    margin: 1rem auto 2rem;
+    font-size: 1.6rem;
+    margin-top: -2rem;
+} }
+
 @media (max-width: 768px) {
   .dropdown:hover .dropdown-menu {
     display: none;
@@ -1343,6 +1383,33 @@ color: var(--color-primary);
     height: 50px;
     font-size: 28px;
   }
+  /* story image */
+  .story-image img {
+    width: 400px;
+    height: 250px;
+  }
+   .cta-container h1 span {
+    font-size: 4rem;
+   }
+
+   .cta-container h1 {
+    text-align: left;
+    padding-right: 50px;
+   }
+  
+
+   /* .cta-container {
+    margin-top: 15rem;
+  }
+  .cta-container h1 span {
+    font-size: 3rem;
+    text-align: left;
+
+  }
+  .cta-container h1 {
+    font-size: 2.5rem;
+  } */
+
 }
 
 

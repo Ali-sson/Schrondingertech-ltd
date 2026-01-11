@@ -92,7 +92,7 @@ body {
   height: 100vh;
   overflow: hidden;
   color: white;
-/* background-image: url('../images/Lifeat.jpg'); */
+background-image: url('../images/Lifeat.jpg');
   background-size: cover;
   background-position: center;
    background-attachment: scroll; /* default */
