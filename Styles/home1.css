@@ -135,7 +135,7 @@ background-image: url('../images/hero1.jpeg');
   margin: 0 auto;
   letter-spacing: -2px;
   color: aliceblue;
-  font-family: Lato, "Helvetica", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
 
 }
@@ -153,7 +153,7 @@ background-image: url('../images/hero1.jpeg');
  border: 5px solid var(--color-accent);
   margin-top: 1rem;
   transition: background 0.3s;
-  font-family: lato, "Helvetica", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-content a:hover {
@@ -651,8 +651,8 @@ background-image: url('../images/hero1.jpeg');
     }
 
     .interest-card h3 {
-      font-size: 3rem;
-      margin-bottom: 0rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -665,6 +665,7 @@ background-image: url('../images/hero1.jpeg');
       transition: all 0.3s ease;
       border: 5px solid var(--color-accent);
       text-align: left;
+      background: var(--color-primary);
      
     }
 

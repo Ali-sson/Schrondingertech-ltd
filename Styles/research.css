@@ -84,14 +84,15 @@ body {
   display: block;
 }
 
-/* Hero section */
+
 /* Hero section background */
+
 .hero-carousel {
   position: relative;
   height: 100vh;
   overflow: hidden;
   color: white;
-background-image: url('../images/Lifeat.jpg');
+/* background-image: url('../images/Lifeat.jpg'); */
   background-size: cover;
   background-position: center;
    background-attachment: scroll; /* default */
@@ -133,7 +134,7 @@ background-image: url('../images/Lifeat.jpg');
   margin: 0 auto;
   letter-spacing: -2px;
   color: aliceblue;
-  font-family: Lato, "Helvetica", sans-serif;
+  font-family: 'poppins', sans-serif;
   text-align: left;
 
 }
@@ -151,7 +152,7 @@ background-image: url('../images/Lifeat.jpg');
  border: 5px solid var(--color-accent);
   margin-top: 1rem;
   transition: background 0.3s;
-  font-family: lato, "Helvetica", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .hero-content a:hover {
@@ -205,9 +206,6 @@ background-image: url('../images/Lifeat.jpg');
     }
 
     .focus-card {
-      /* background: var(--color-light); */
-      /* border-radius: 10px; */
-      /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
       padding: 20px;
       transition: transform 0.3s ease;
       text-align: left;
@@ -286,7 +284,7 @@ background-image: url('../images/Lifeat.jpg');
 
 
 
-.cta-container1 h2 {
+.cta-container1 h1 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -294,7 +292,7 @@ background-image: url('../images/Lifeat.jpg');
   z-index: 2;
 }
 
-.cta-container1 h2 span {
+.cta-container1 h1 span {
   color: var(--color-accent); 
   font-size: 4rem;
   z-index: 2;
@@ -311,18 +309,16 @@ background-image: url('../images/Lifeat.jpg');
 
 .btn-contact {
   text-align: left;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .cta-button {
-  display: align-left;
   background: #fff;
   color: var(--color-primary);
-  padding: 0 2rem;
-  font-size: 1.6rem;
+  padding: 0 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 2rem;
   transition: all 0.3s ease;
   text-align: left;
   border: 5px solid var(--color-accent);
@@ -372,7 +368,6 @@ background-image: url('../images/Lifeat.jpg');
   }
 
 h2 {
-  /* font-size: 26px; */
   font-weight: bold;
   position: relative;
   display: inline-block;
@@ -794,7 +789,7 @@ h2::after {
   text-align: center;
   padding: 5rem 2rem;
   margin: 3rem auto;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 .cta-container {
@@ -855,11 +850,11 @@ text-align: left;
 
 /* Interested section  */
 
-/* Interested section  */
 
 .interest {
   text-align: center;
   background: white;
+  margin-bottom: 3rem;
 }
 
     .interest-container {
@@ -904,8 +899,8 @@ text-align: left;
     }
 
     .interest-card h3 {
-      font-size: 3rem;
-      margin-bottom: 0rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -918,6 +913,7 @@ text-align: left;
       transition: all 0.3s ease;
       border: 5px solid var(--color-accent);
       text-align: left;
+      background: var(--color-primary);
      
     }
 

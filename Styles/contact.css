@@ -1,0 +1,415 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Apply same style to both links and dropdown toggle */
+.nav-links a,
+.dropdown-toggle {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-style: bolder;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  color: var(--color-primary);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Flex for arrow */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Arrow animation */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+
+
+/* Submenu hidden */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Hero section  */
+
+/* Hero section background */
+
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+background-image: url('../images/DSC_00361.jpg');
+  background-size: cover;
+  background-position: center;
+   background-attachment: scroll; /* default */
+  background-attachment: fixed; /* fallback for desktop */
+}
+
+/* Dark overlay */
+.hero-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* darkness */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+/* hero-text */
+.hero-p {
+  font-size: 2rem;
+  color: #ddd;
+  text-align: left;
+  padding-left: 5rem;
+  margin-top: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  padding-left: 5rem;
+  margin: 0 auto;
+  letter-spacing: -2px;
+  color: aliceblue;
+  font-family: 'poppins', sans-serif;
+  text-align: left;
+
+}
+
+.clean {
+ color: var(--color-accent);
+  font-size: 7rem;
+}
+
+.hero-content a {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 1.5rem 1.5rem;
+ border: 5px solid var(--color-accent);
+  margin-top: 1rem;
+  transition: background 0.3s;
+  font-family: 'poppins', sans-serif;
+}
+
+.hero-content a:hover {
+  background: var(--color-primary-dark);
+  border: 5px solid white;
+}
+
+
+
+/* SECTION */
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* LEFT */
+.contact-info {
+  color: var(--color-primary);
+  flex: 1;
+}
+
+.contact-info h1 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.contact-info p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.contact-details {
+  margin-top: 2rem;
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
+}
+
+/* RIGHT FORM CARD */
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  flex: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-dark);
+}
+
+.contact-form span {
+  font-weight: normal;
+
+}
+
+/* FORM */
+form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-size: 1.2rem;
+  margin : 1rem;
+  color: var(--color-primary-dark);
+
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary-dark);
+}
+
+/* BUTTON */
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--color-primary);
+  color: #fff;
+  border: 5px solid var(--color-accent);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-primary-dark);
+}
+
+
+/* Map Section */
+
+
+/* Map Section */
+.map-section {
+  padding: 4rem;
+  text-align: center;
+  background: #f9f9f9; /* light background for contrast */
+
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  color: #0073C7;
+  margin-bottom: 3rem;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* prevents map from being too wide on large screens */
+  margin: 0 auto;
+  padding-bottom: 35%; /* 16:9 aspect ratio */
+  height: 50px;
+  overflow: hidden;
+  border-radius: 12px; /* smooth rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+
+
+/* RESPONSIVE */
+
+
+/* Mobile: show on click */
+@media (max-width: 1180px) {
+  .dropdown.active .dropdown-menu {
+    display: block;
+    position: static; /* makes it stack nicely */
+    box-shadow: none;
+    background: #f9f9f9;
+    /* margin-top: 5px; */
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    position: absolute;
+    top: 70px; /* adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+    .dropdown-toggle i {
+  display: block;
+}
+
+.hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
+}
+    .Quote {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+      .Quote {
+    display: none;
+  }
+  .hero-content h1 {
+    padding-left: 2rem;
+  }
+
+  .hero-p {
+    padding-left: 2rem;
+  }
+
+  .Hero-button {
+  text-align: left;
+  padding-left: 2rem;
+  
+}
+
+.Hero-button a {
+  font-size: 1.4rem;
+  padding: 1rem;
+  
+}
+}
+
+
+@media (max-width: 768px) {
+  .value-card {
+    max-width: 100%;
+  }
+  .hero-carousel {
+  height: 70vh;
+  background-attachment: scroll;
+}
+.hero-content h1 {
+  letter-spacing: -1.5px;
+  font-size: 3.5rem;
+} 
+.clean {
+  font-size: 3.5rem;
+}
+.hero-p {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
+    .Quote {
+    display: none;
+  }
+}
+/* Desktop: show on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  
+}
+

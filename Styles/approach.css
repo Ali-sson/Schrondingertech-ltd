@@ -88,7 +88,7 @@
   height: 100vh;
   overflow: hidden;
   color: white;
-background-image: url('../images/hero1.jpeg');
+background-image: url('../images/approach.jpeg');
   background-size: cover;
   background-position: center;
    background-attachment: scroll; /* default */
@@ -102,7 +102,7 @@ background-image: url('../images/hero1.jpeg');
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* darkness */
+  background: rgba(0, 0, 0, 0.5); /* darkness */
   z-index: 0;
 }
 
@@ -130,7 +130,7 @@ background-image: url('../images/hero1.jpeg');
   margin: 0 auto;
   letter-spacing: -2px;
   color: aliceblue;
-  font-family: Lato, "Helvetica", sans-serif;
+  font-family: 'poppins', sans-serif;
   text-align: left;
 
 }
@@ -377,8 +377,8 @@ background-image: url('../images/hero1.jpeg');
     }
 
     .interest-card h3 {
-      font-size: 3rem;
-      margin-bottom: 0rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -391,6 +391,7 @@ background-image: url('../images/hero1.jpeg');
       transition: all 0.3s ease;
       border: 5px solid var(--color-accent);
       text-align: left;
+      background: var(--color-primary);
      
     }
 
