@@ -410,6 +410,10 @@ button:hover {
     display: block;
   }
 
+  .contact-section {
+    margin: 0 2rem;
+  }
+
   
 }
 

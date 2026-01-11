@@ -197,13 +197,27 @@ background-image: url('../images/Lifeat.jpg');
     } */
 
 
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 5px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
+   .focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
 
     .focus-card {
       padding: 20px;
@@ -217,7 +231,7 @@ background-image: url('../images/Lifeat.jpg');
 
     .focus-card img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       border-radius: 5px;
       object-fit: cover;
       margin-bottom: 15px;
@@ -1011,4 +1025,8 @@ text-align: left;
   width: 100%;
   height: auto;
   margin: 0 0 2rem 0;
-} }
+}
+ .Quote {
+    display: none;
+   }
+}
