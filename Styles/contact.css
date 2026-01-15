@@ -421,6 +421,10 @@ button:hover {
     padding: 1rem;         /* inner spacing */
     max-width: 96%;          /* space left & right */
   }
+
+  .form-row {
+    flex-direction: column;
+  }
 }
 /* Desktop: show on hover */
 @media (min-width: 769px) {
