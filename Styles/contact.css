@@ -235,6 +235,7 @@ form {
 
 .form-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -415,6 +416,11 @@ button:hover {
   .contact-section {
     padding: 0 2rem;
   }
+   .contact-form {
+    margin: 0 auto;          /* center it */
+    padding: 1rem;         /* inner spacing */
+    max-width: 96%;          /* space left & right */
+  }
 }
 /* Desktop: show on hover */
 @media (min-width: 769px) {
@@ -434,4 +440,3 @@ button:hover {
 
   
 }
-
