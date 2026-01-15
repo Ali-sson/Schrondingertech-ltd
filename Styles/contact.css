@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -125,6 +132,7 @@ background-image: url('../images/DSC_00361.jpg');
   text-align: left;
   padding-left: 5rem;
   margin-top: 1rem;
+  max-width: 700px;
 }
 
 .hero-content h1 {
@@ -403,6 +411,10 @@ button:hover {
     .Quote {
     display: none;
   }
+
+  .contact-section {
+    padding: 0 2rem;
+  }
 }
 /* Desktop: show on hover */
 @media (min-width: 769px) {
@@ -413,6 +425,12 @@ button:hover {
   .contact-section {
     margin: 0 2rem;
   }
+
+  .map-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 
   
 }
