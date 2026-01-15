@@ -222,5 +222,13 @@ background-image: url('../images/WhyWork.jpg');
 .Quote {
   display: none;
 }
+
+  .hero-p {
+    font-size: 1.3rem;
+    padding-left: 0;
+    text-align: left;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
 }
 

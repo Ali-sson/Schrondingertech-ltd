@@ -145,6 +145,7 @@ background-image: url('../images/approach.jpeg');
   text-align: left;
   padding-left: 5rem;
   margin-top: 1rem;
+  max-width: 700px;
 }
 
 .hero-content h1 {
@@ -539,16 +540,19 @@ background-image: url('../images/approach.jpeg');
   letter-spacing: -1.5px;
   font-size: 3.5rem;
   padding-left: 2rem;
-  margin-bottom: 3rem;
+  
 } 
 .clean {
   font-size: 3.5rem;
 }
-.hero-p {
-  font-size: 1.4rem;
-  padding-left: 2rem;
-} 
+  .hero-content p{
+    font-size: 1.3rem;
+    padding-left: 0;
+    text-align: left;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
 .hero-content {
-  top: 25%;
+  top: 10%;
 } 
 }

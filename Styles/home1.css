@@ -810,6 +810,15 @@ background-image: url('../images/hero1.jpeg');
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     z-index: 1000;
   }
+  .Quote {
+    display: none;
+  }
+
+ .hero-carousel{
+    height: 100vh;
+  }
+
+
 
             .card-solution {
                 width: 45%;

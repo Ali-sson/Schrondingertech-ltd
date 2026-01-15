@@ -132,10 +132,11 @@ background-image: url('../images/career2.jpeg');
 /* hero-text */
 .hero-p {
   font-size: 2rem;
-  color: #ddd;
+  color: #ffff;
   text-align: left;
   padding-left: 5rem;
   margin-top: 1rem;
+  max-width: 700px;   
 }
 
 
@@ -627,9 +628,13 @@ background-image: url('../images/career2.jpeg');
   font-size: 3.5rem;
 }
 .hero-p {
-  font-size: 1.4rem;
-  padding-left: 2rem;
-}
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 1rem auto;
+    text-align: left;
+    padding-left: 2rem;
+
+  }
 }
 /* Desktop: show on hover */
 @media (min-width: 769px) {
