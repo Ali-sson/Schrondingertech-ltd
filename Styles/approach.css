@@ -207,9 +207,10 @@ background-image: url('../images/approach.jpeg');
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   /* margin-bottom: 5rem; */
-  padding: 0 4rem;
+  padding: 0 4rem;;
+  
 }
 
 .story-block.reverse {

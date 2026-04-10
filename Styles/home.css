@@ -415,7 +415,7 @@ footer {
   }
 
   .footer-container {
-    grid-template-columns: 1fr; /* stack columns */
+     grid-template-columns: repeat(2, 1fr); /* 2 by 2 */
     text-align: left;
   }
 

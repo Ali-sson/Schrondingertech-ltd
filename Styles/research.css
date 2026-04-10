@@ -256,6 +256,17 @@ background-image: url('../images/Lifeat.jpg');
      
     }
 
+    .btnn {
+      display: inline-block;
+      padding: 0 1.5rem;
+      color: var(--color-primary);
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      border-bottom: 5px solid var(--color-accent);
+    
+    }
+
     /*  */
 
     

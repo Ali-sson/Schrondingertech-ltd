@@ -29,6 +29,10 @@ body {
   padding: 0;
 }
 
+.nav-links .dropdown-toggle i {
+  color: black !important;
+}
+
 /* Hover effect */
 .nav-links a:hover,
 .dropdown-toggle:hover {
@@ -46,6 +50,17 @@ body {
   align-items: center;
   gap: 5px;
 }
+
+.dropdown-toggle {
+  color: red;
+}
+
+
+.dropdown-toggle i {
+  color: black;
+}
+
+
 
 /* Arrow animation */
 .arrow {
@@ -85,6 +100,8 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+
 
 /* Hero section */
 /* Hero section background */
@@ -196,12 +213,12 @@ background-image: url('../images/hero1.jpeg');
   gap: 2rem;
   flex-wrap: wrap;           /* stack on smaller screens */
   padding: 0 2rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 
 }
 .about-image img {
   width: 100%;        /* take full container width */
-  height: 300px;       /* keep natural height */
+  height: 370px;       /* keep natural height */
   object-fit: cover;
 
   display: block;
@@ -960,6 +977,10 @@ background-image: url('../images/hero1.jpeg');
     text-align: left;
     max-width: 90%;
     margin: 1rem auto;
+  }
+
+  .about-content .title {
+    font-size: 2rem;
   }
 }
 
